@@ -2,6 +2,7 @@ baseURL = "https://kizaru-borsalino.github.io/Report_AWS_TraiNguyen/"
 relativeURLs = false
 canonifyURLs = true
 defaultContentLanguage = "en"
+buildFuture = true
 
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
