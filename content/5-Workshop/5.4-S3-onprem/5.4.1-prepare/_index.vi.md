@@ -1,28 +1,28 @@
 ---
-title: "Chu?n b? VPC, RDS v? private bucket"
+title: "Chuẩn bị VPC, RDS và private bucket"
 date: 2026-08-08
 weight: 1
 chapter: false
 pre: " <b> 5.4.1. </b> "
 ---
 
-## Th?nh ph?n c?n t?o
+## Thành phần cần tạo
 
-- 1 VPC v?i public subnet cho ALB v? private subnet cho ECS/RDS.
-- 1 security group cho ALB v? 1 security group cho ECS.
-- 1 [Amazon RDS for PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html) cho d? li?u nghi?p v?.
-- 1 private bucket `jobgo-resume-prod` cho CV v? file ??nh k?m.
+- 1 VPC với public subnet cho ALB và private subnet cho ECS/RDS.
+- 1 security group cho ALB và 1 security group cho ECS.
+- 1 [Amazon RDS for PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html) cho dữ liệu nghiệp vụ.
+- 1 private bucket `jobgo-resume-prod` cho CV và file đính kèm.
 
-## L?u ? thi?t k?
+## Lưu ý thiết kế
 
-- ALB nh?n request t? Internet, c?n ECS task ch? nh?n traffic t? ALB.
-- RDS ch? cho ph?p inbound t? security group c?a ECS.
-- Bucket CV kh?ng public; backend t?o pre-signed URL ho?c stream file theo ph?n quy?n.
+- ALB nhận request từ Internet, còn ECS task chỉ nhận traffic từ ALB.
+- RDS chỉ cho phép inbound từ security group của ECS.
+- Bucket CV không public; backend tạo pre-signed URL hoặc stream file theo phân quyền.
 
-## C?c b?ng d? li?u ch?nh
+## Các bảng dữ liệu chính
 
 - `users`, `student_profiles`, `company_profiles`
 - `jobs`, `applications`, `resumes`
 - `skills`, `job_positions`, `levels`, `locations`, `employment_types`, `work_modes`
 
-Thi?t k? n?y gi?p AI matching kh?ng ph?i so s?nh text t? do m? d?a tr?n master data chu?n h?a.
+Thiết kế này giúp AI matching không phải so sánh text tự do mà dựa trên master data chuẩn hóa.

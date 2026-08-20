@@ -8,25 +8,25 @@ pre: " <b> 1. </b> "
 
 # Worklog
 
-Ph?n n?y ghi l?i ti?n ?? x?y d?ng **JobGo** trong giai ?o?n **15/06/2026 - 05/09/2026** theo l?ch l?m vi?c t? **th? 2 ??n th? 7**. N?i dung b?m theo ti?n tr?nh th?c t? c?a d? ?n: kh?i ??ng, ph?n t?ch nghi?p v?, ph?t tri?n t?nh n?ng, ho?n thi?n AI Matching, chu?n b? tri?n khai AWS v? vi?t b?o c?o cu?i k?.
+Phần này ghi lại tiến độ xây dựng **JobGo** trong giai đoạn **15/06/2026 - 05/09/2026** theo lịch làm việc từ **thứ 2 đến thứ 7**. Nội dung bám theo tiến trình thực tế của dự án: khởi động, phân tích nghiệp vụ, phát triển tính năng, hoàn thiện AI Matching, chuẩn bị triển khai AWS và viết báo cáo cuối kỳ.
 
-## Danh s?ch tu?n
+## Danh sách tuần
 
-1. [Tu?n 1 - Kh?i ??ng d? ?n v? ph?n t?ch nhu c?u](./1.1-Week1/)
-2. [Tu?n 2 - X?y d?ng ??c t? ch?c n?ng v? ph?m vi MVP](./1.2-Week2/)
-3. [Tu?n 3 - Thi?t k? ki?n tr?c backend v? c? s? d? li?u](./1.3-Week3/)
-4. [Tu?n 4 - X?y d?ng x?c th?c, ph?n quy?n v? API n?n t?ng](./1.4-Week4/)
-5. [Tu?n 5 - Ho?n thi?n h? s? ?ng vi?n, doanh nghi?p v? master data](./1.5-Week5/)
-6. [Tu?n 6 - X?y d?ng nghi?p v? vi?c l?m, ?ng tuy?n v? duy?t tuy?n d?ng](./1.6-Week6/)
-7. [Tu?n 7 - T?i c?u tr?c giao di?n theo t?ng vai tr? v? m?n h?nh ri?ng](./1.7-Week7/)
-8. [Tu?n 8 - Ho?n thi?n quy tr?nh CV, l?ch s? ?ng tuy?n v? danh s?ch ?ng vi?n](./1.8-Week8/)
-9. [Tu?n 9 - Chu?n h?a master data v? ??ng b? ti?ng Vi?t c? d?u](./1.9-Week9/)
-10. [Tu?n 10 - X?y d?ng AI Matching Engine cho ?ng vi?n v? doanh nghi?p](./1.10-Week10/)
-11. [Tu?n 11 - K? ho?ch tri?n khai JobGo l?n AWS v? ki?m th? ph?t h?nh](./1.11-Week11/)
-12. [Tu?n 12 - Ho?n thi?n b?o c?o song ng? v? b?n giao d? ?n](./1.12-Week12/)
+1. [Tuần 1 - Khởi động dự án và phân tích nhu cầu](./1.1-Week1/)
+2. [Tuần 2 - Xây dựng đặc tả chức năng và phạm vi MVP](./1.2-Week2/)
+3. [Tuần 3 - Thiết kế kiến trúc backend và cơ sở dữ liệu](./1.3-Week3/)
+4. [Tuần 4 - Xây dựng xác thực, phân quyền và API nền tảng](./1.4-Week4/)
+5. [Tuần 5 - Hoàn thiện hồ sơ ứng viên, doanh nghiệp và master data](./1.5-Week5/)
+6. [Tuần 6 - Xây dựng nghiệp vụ việc làm, ứng tuyển và duyệt tuyển dụng](./1.6-Week6/)
+7. [Tuần 7 - Tái cấu trúc giao diện theo từng vai trò và màn hình riêng](./1.7-Week7/)
+8. [Tuần 8 - Hoàn thiện quy trình CV, lịch sử ứng tuyển và danh sách ứng viên](./1.8-Week8/)
+9. [Tuần 9 - Chuẩn hóa master data và đồng bộ tiếng Việt có dấu](./1.9-Week9/)
+10. [Tuần 10 - Xây dựng AI Matching Engine cho ứng viên và doanh nghiệp](./1.10-Week10/)
+11. [Tuần 11 - Kế hoạch triển khai JobGo lên AWS và kiểm thử phát hành](./1.11-Week11/)
+12. [Tuần 12 - Hoàn thiện báo cáo song ngữ và bàn giao dự án](./1.12-Week12/)
 
-## Ghi ch?
+## Ghi chú
 
-- C?c tu?n ??u t?p trung v?o **kh?o s?t nhu c?u, use case, SRS, thi?t k? d? li?u v? ki?n tr?c**.
-- C?c tu?n gi?a t?p trung v?o **x?y d?ng nghi?p v? c?t l?i** cho ?ng vi?n, doanh nghi?p v? qu?n tr? vi?n.
-- Hai tu?n cu?i l? **k? ho?ch tri?n khai v? b?n giao**, t??ng ?ng v?i giai ?o?n `24/08/2026 - 05/09/2026`.
+- Các tuần đầu tập trung vào **khảo sát nhu cầu, use case, SRS, thiết kế dữ liệu và kiến trúc**.
+- Các tuần giữa tập trung vào **xây dựng nghiệp vụ cốt lõi** cho ứng viên, doanh nghiệp và quản trị viên.
+- Hai tuần cuối là **kế hoạch triển khai và bàn giao**, tương ứng với giai đoạn `24/08/2026 - 05/09/2026`.

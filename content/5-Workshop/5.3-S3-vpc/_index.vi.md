@@ -1,9 +1,9 @@
 ---
-title: "Tri?n khai frontend v?i S3 v? CloudFront"
+title: "Triển khai frontend với S3 và CloudFront"
 date: 2026-08-06
 weight: 3
 chapter: false
 pre: " <b> 5.3. </b> "
 ---
 
-M?c ti?u c?a ph?n n?y l? ??a giao di?n React c?a JobGo l?n AWS d??i d?ng static website, sau ?? ph?n ph?i qua CloudFront ?? ng??i d?ng guest v?n xem ???c danh s?ch vi?c l?m c?ng khai v?i t?c ?? t?i t?t h?n v? c? HTTPS.
+Mục tiêu của phần này là đưa giao diện React của JobGo lên AWS dưới dạng static website, sau đó phân phối qua CloudFront để người dùng guest vẫn xem được danh sách việc làm công khai với tốc độ tải tốt hơn và có HTTPS.

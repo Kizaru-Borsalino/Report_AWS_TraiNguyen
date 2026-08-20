@@ -1,29 +1,29 @@
 ---
-title: "Ki?m th? API, upload CV v? quan s?t h? th?ng"
+title: "Kiểm thử API, upload CV và quan sát hệ thống"
 date: 2026-08-10
 weight: 3
 chapter: false
 pre: " <b> 5.4.3. </b> "
 ---
 
-## Ki?m th? backend
+## Kiểm thử backend
 
 ```bash
 curl https://api.jobgo.example.com/health
 curl https://api.jobgo.example.com/api/jobs
 ```
 
-## Ki?m th? nghi?p v? ch?nh
+## Kiểm thử nghiệp vụ chính
 
-1. ?ng vi?n ??ng k? t?i kho?n v? t?o h? s?.
-2. ?ng vi?n t?i CV l?n bucket private th?ng qua backend.
-3. Doanh nghi?p t?o tin tuy?n d?ng v?i k? n?ng, v? tr?, c?p b?c v? ??a ?i?m.
-4. Trang vi?c l?m hi?n th? ph?n tr?m **AI Matching** khi ?ng vi?n ?? c? h? s?.
-5. Khi ?ng vi?n b?m ?ng tuy?n, h? th?ng t?o `application`, l?u th? gi?i thi?u v? ??ng b? sang l?ch s? ?ng tuy?n.
-6. Doanh nghi?p m? danh s?ch ?ng vi?n ?? xem ?i?m matching, th? gi?i thi?u, CV v? c?p nh?t tr?ng th?i.
+1. Ứng viên đăng ký tài khoản và tạo hồ sơ.
+2. Ứng viên tải CV lên bucket private thông qua backend.
+3. Doanh nghiệp tạo tin tuyển dụng với kỹ năng, vị trí, cấp bậc và địa điểm.
+4. Trang việc làm hiển thị phần trăm **AI Matching** khi ứng viên đã có hồ sơ.
+5. Khi ứng viên bấm ứng tuyển, hệ thống tạo `application`, lưu thư giới thiệu và đồng bộ sang lịch sử ứng tuyển.
+6. Doanh nghiệp mở danh sách ứng viên để xem điểm matching, thư giới thiệu, CV và cập nhật trạng thái.
 
-## Quan s?t
+## Quan sát
 
 - Xem log backend trong [CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html).
-- Theo d?i l?i 4xx/5xx t?i ALB v? ECS service.
-- Ki?m tra log upload CV, t?o job, t?o application v? c?p nh?t tr?ng th?i ?ng tuy?n.
+- Theo dõi lỗi 4xx/5xx tại ALB và ECS service.
+- Kiểm tra log upload CV, tạo job, tạo application và cập nhật trạng thái ứng tuyển.
