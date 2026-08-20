@@ -13,7 +13,7 @@ chapter: false
 
 &emsp; **Số điện thoại:** 0869905028
 
-&emsp; **Email:** trai271020004@gmail.com
+&emsp; **Email:** 22521496@gm.uit.edu.vn
 
 &emsp; **Trường:** Đại học Công nghệ Thông tin
 
@@ -27,13 +27,13 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 15/06/2026 đến ngày 05/09/2026
 
-![Ảnh đại diện của bạn](/images/avatar.png)
+![Ảnh đại diện của bạn](/images/avatar.png?width=280px)
 
 ### Nội dung báo cáo
 
 1. [Worklog](1-Worklog/)
 2. [Proposal](2-Proposal/)
-3. [Blogs Posted](3-Blogs Posted/)
+3. [Blogs Posted](3-Project/)
 4. [Events Participated](4-EventParticipated/)
 5. [Workshop](5-Workshop/)
 6. [Tự đánh giá](6-Self-evaluation/)

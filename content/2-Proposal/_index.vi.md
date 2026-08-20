@@ -87,6 +87,8 @@ User Browser
   -> CloudWatch Logs / Alarms
 ```
 
+![Sơ đồ kiến trúc dự án](/images/architecture_final.png)
+
 ### 5. Kết quả kỳ vọng
 
 - Có một web tuyển dụng hoạt động theo đúng vai trò nghiệp vụ.

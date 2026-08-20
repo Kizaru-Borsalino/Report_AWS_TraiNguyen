@@ -17,7 +17,7 @@ pre: " <b> 4.1. </b> "
 
 ## Hình ảnh sự kiện
 
-![Hình ảnh Chung kết cuộc thi Cloud Architect](../../images/event1.jpg)
+![Hình ảnh Chung kết cuộc thi Cloud Architect](/images/event1.jpg)
 
 ## Nội dung tham gia
 

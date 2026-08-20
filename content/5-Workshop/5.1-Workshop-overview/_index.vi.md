@@ -36,6 +36,7 @@ Người dùng
   -> Amazon S3 private bucket (CV và file đính kèm)
   -> Amazon CloudWatch Logs / Alarms
 ```
+![Sơ đồ kiến trúc dự án](/images/architecture_final.png)
 
 ## Lý do chọn dịch vụ
 

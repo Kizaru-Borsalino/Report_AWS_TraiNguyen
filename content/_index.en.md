@@ -13,7 +13,7 @@ chapter: false
 
 &emsp; **Phone number:** 0869905028
 
-&emsp; **Email:** trai271020004@gmail.com
+&emsp; **Email:** 22521496@gm.uit.edu.vn
 
 &emsp; **University:** University of Information Technology
 
@@ -27,7 +27,7 @@ chapter: false
 
 &emsp; **Internship duration:** From 15/06/2026 to 05/09/2026
 
-![Profile Picture](/images/avatar.png)
+![Profile Picture](/images/avatar.png?width=280px)
 
 ### Report Contents
 

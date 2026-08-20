@@ -36,6 +36,7 @@ Users
   -> Amazon S3 private bucket (resumes and attachments)
   -> Amazon CloudWatch Logs / Alarms
 ```
+![Architecture Diagram](/images/architecture_final.png)
 
 ## Why These Services
 

@@ -17,7 +17,7 @@ pre: " <b> 4.2. </b> "
 
 ## Event Image
 
-![FCAJ x Agentic AI Build Week event image](../../../images/event2.jpg)
+![FCAJ x Agentic AI Build Week event image](/images/event2.jpg)
 
 ## Activities
 

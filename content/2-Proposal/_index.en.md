@@ -50,6 +50,7 @@ User Browser
   -> Amazon S3 private bucket (resume files)
   -> CloudWatch Logs / Alarms
 ```
+![Architecture Diagram](/images/architecture_final.png)
 
 ### 5. Expected Outcome
 
