@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# JobGo trên AWS
+# JobGo 
 
 ## Xây dựng nền tảng tuyển dụng và tìm việc tích hợp AI Matching trên AWS
 

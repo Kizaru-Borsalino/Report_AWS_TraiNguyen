@@ -6,7 +6,6 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-# Worklog
 
 This section records the implementation progress of **JobGo** during **15/06/2026 - 05/09/2026**, following a **Monday-to-Saturday** schedule. The timeline reflects the actual project flow: project kickoff, requirement analysis, feature delivery, AI matching completion, AWS deployment preparation, and final reporting.
 

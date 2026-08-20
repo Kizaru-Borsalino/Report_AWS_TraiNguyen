@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# JobGo on AWS
+# JobGo 
 
 ## Building an AI-assisted recruitment and job discovery platform on AWS
 

@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-# Blogs Posted
+
 
 Phần này dành cho **3 bài viết kỹ thuật** em đăng trong nhóm Facebook AWS Study Group theo đúng quy định FCAJ. Nội dung chi tiết của từng bài em sẽ cập nhật sau khi hoàn tất việc viết và đăng bài.
 

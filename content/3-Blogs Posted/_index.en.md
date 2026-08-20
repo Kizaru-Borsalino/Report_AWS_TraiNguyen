@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-# Blogs Posted
+
 
 This section is reserved for the **three technical blog posts** that I will publish in the AWS Study Group Facebook group, following the FCAJ requirement. I will update each page with the final published content and links later.
 
