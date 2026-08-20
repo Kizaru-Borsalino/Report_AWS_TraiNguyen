@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-
+# Worklog
 
 Phần này ghi lại tiến độ xây dựng **JobGo** trong giai đoạn **15/06/2026 - 05/09/2026** theo lịch làm việc từ **thứ 2 đến thứ 7**. Nội dung bám theo tiến trình thực tế của dự án: khởi động, phân tích nghiệp vụ, phát triển tính năng, hoàn thiện AI Matching, chuẩn bị triển khai AWS và viết báo cáo cuối kỳ.
 
@@ -30,3 +30,8 @@ Phần này ghi lại tiến độ xây dựng **JobGo** trong giai đoạn **15
 - Các tuần đầu tập trung vào **khảo sát nhu cầu, use case, SRS, thiết kế dữ liệu và kiến trúc**.
 - Các tuần giữa tập trung vào **xây dựng nghiệp vụ cốt lõi** cho ứng viên, doanh nghiệp và quản trị viên.
 - Hai tuần cuối là **kế hoạch triển khai và bàn giao**, tương ứng với giai đoạn `24/08/2026 - 05/09/2026`.
+
+## Mốc quan trọng cuối kỳ
+
+- **Tuần 11** là giai đoạn chuẩn bị phát hành, rà soát hạ tầng AWS, smoke test và kiểm tra toàn bộ luồng chính của hệ thống.
+- **Tuần 12** là giai đoạn hoàn thiện báo cáo, chuẩn hóa tài liệu song ngữ, kiểm tra website báo cáo và bàn giao dự án trước ngày nộp cuối cùng.

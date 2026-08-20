@@ -10,109 +10,28 @@ pre: " <b> 4.3. </b> "
 
 | Item | Detail |
 | --- | --- |
-| Event name | **FCAJ Community Day August!** |
-| Time | 09:00 - 12:00, July 25, 2026 |
+| Event name | **FCAJ Community Day August** |
+| Time | 09:00 - 12:00, August 22, 2026 |
 | Location | 26th Floor, Bitexco Financial Tower |
 | Role | Attendee |
 
-## Event Image
+## Note
 
-![FCAJ Community Day August image](/images/)
+This event entry has been added to keep the internship activity timeline complete. The event image and full takeaways can be updated later after the event is completed or after the final notes are consolidated.
 
-## Activities
+## Topics of Interest
 
-### ​Development Application with AWS Serverless ( 09:25 - 09:50 )
+The event is expected to focus on modern topics related to AWS, AI, cloud-native engineering, and practical lessons from the technical community. These themes are highly relevant to the JobGo project because the platform is not only a web application, but also a product that touches AI matching, cloud architecture, and production-oriented thinking.
 
-​Introduction to Serverless Computing  
+The topics I am especially interested in include:
 
-​What is Serverless?
+- Building applications with AWS Serverless
+- Optimizing database cost and performance
+- Diffusion and OCR on AWS
+- Agentic AIOps and the AWS DevOps Agent
+- Migrating GenAI products to AWS
+- Applying AWS principles to cloud-native roles
 
-​Traditional application development vs. Serverless development
+## Expected Value
 
-​Benefits and trade-offs of Serverless architectures
-
-​AWS Serverless application patterns
-
-​Application demo
-
-### Optimizing Database Cost & Performance with Data Archiving Strategies ( 09:25 - 09:50 )
-
-​Understanding database growth and operational challenges
-
-​Data archiving architecture and solution overview
-
-​Initial data load design and implementation
-
-​Daily incremental archiving strategy
-
-​Cost optimization techniques and performance improvements
-
-​Best practices, lessons learned, and key takeaways
-
-
-### Diffusion and OCR ( 09:50 - 10:15 )
-
-​AWS services for Text-to-Image generation
-
-​AWS services for Image-to-Text extraction and analysis
-
-​Real-world use cases and implementation patterns
-
-​Live demo
-
-### Agentic AIOps on AWS: Inside AWS DevOps Agent ( 10:15 - 10:45 )
-
-​Introduction to AWS DevOps Agent and operational challenges
-
-​Real-world incident troubleshooting and investigation workflows
-
-​Architecture overview, Agent Space, AWS integrations, and security boundaries
-
-​How the Agent forms hypotheses, gathers evidence, and generates recommendations
-
-​Live incident investigation demo
-
-​MCP extensibility, limitations, best practices, and the future of controlled automation
-
-### From Local to Global: Migrating a GenAI Product to AWS ( 10:45 - 11:10 )
-
-​Challenges and motivations behind GenAI platform migration
-
-​Moving from external AI services to a centralized AWS architecture
-
-​Azure OpenAI to Amazon Bedrock: lessons learned and migration considerations
-
-​Building Agentic AI systems on AWS
-
-​Guardrails, evaluation frameworks, and operational governance
-
-​Key takeaways from real-world migration experiences
-
-### Agentic Decision Intelligence on AWS ( 11:10 - 11:35 )
-
-​Introduction to Agentic Decision Intelligence
-
-​Leveraging AI agents for business decision-making
-
-​Building intelligent decision workflows on AWS
-
-​Banking use cases and industry insights
-
-​Transforming data into business insights with Amazon QuickSight
-
-​Real-world examples and demonstrations
-
-### AWS Principles Beyond AWS: How AWS Knowledge Transfers to Cloud-Native Roles ( 11:35 - 12:00 )
-
-​Beyond the Console: why AWS knowledge remains valuable
-
-​Applying AWS operational principles across cloud-native environments
-
-​Lessons from real-world releases, incident recovery, and security operations
-
-​Building transferable skills for modern engineering roles
-
-​Adopting AWS thinking beyond AWS services
-
-​Career growth opportunities in cloud-native ecosystems
-
+Through this event, I expect to gain more practical insight into how the community and companies are using AWS to solve product, data, and AI problems. Those learnings can directly support the AWS deployment direction of JobGo and improve my system design mindset for future projects.

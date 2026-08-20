@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Worklog"
 date: 2026-06-15
 weight: 1
@@ -6,6 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
+# Worklog
 
 This section records the implementation progress of **JobGo** during **15/06/2026 - 05/09/2026**, following a **Monday-to-Saturday** schedule. The timeline reflects the actual project flow: project kickoff, requirement analysis, feature delivery, AI matching completion, AWS deployment preparation, and final reporting.
 
@@ -29,3 +30,8 @@ This section records the implementation progress of **JobGo** during **15/06/202
 - The early weeks focus on **problem discovery, use cases, SRS, data design, and target architecture**.
 - The middle phase focuses on **core business implementation** for candidates, companies, and administrators.
 - The last two weeks represent the **deployment and handover plan**, covering `24/08/2026 - 05/09/2026`.
+
+## Final Milestones
+
+- **Week 11** focuses on release preparation, AWS deployment planning, infrastructure review, and smoke testing of the major user flows.
+- **Week 12** focuses on final report completion, bilingual content review, report-site validation, and project handover before the final submission date.
