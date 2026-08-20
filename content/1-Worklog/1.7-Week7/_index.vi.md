@@ -1,6 +1,6 @@
-﻿---
-title: "Tuần 7 - Kết nối với backend và chạy thử"
-date: 2024-01-01
+---
+title: "Tuần 7 - Hoàn thiện nghiệp vụ và trải nghiệm người dùng"
+date: 2026-07-27
 weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
@@ -8,16 +8,22 @@ pre: " <b> 1.7. </b> "
 
 ### Mục tiêu
 
-- Build frontend bằng Vite và chuẩn bị deploy.
-- Kết nối Backend và chạy thử.
+- Hoàn thiện các lỗi nghiệp vụ còn rời rạc giữa trang việc làm, ứng tuyển và lịch sử.
+- Nâng cấp giao diện theo nhận diện JobGo và chuẩn hóa toàn bộ tiếng Việt có dấu.
+- Cải thiện khả năng quan sát lỗi giao diện và API.
 
 ### Công việc đã thực hiện
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu |
 | --- | --- | --- | --- | --- |
-| 2 | Cấu hình biến môi trường VITE_API_URL, build production bằng Vite và chuẩn bị deploy frontend lên S3/CloudFront.<br> | 20/07/2026 | 21/07/2026 | Vite Build Docs / AWS S3 / Hosting Docs |
-| 4 | Chạy và kiểm thử end-to-end sau khi kết nối frontend với backend production.<br> | 22/07/2026 | 25/07/2026 |  Demo checklist |
+| Thứ 2 | Sửa luồng nhảy từ trang việc làm sang trang ứng tuyển sau khi chọn vị trí. | 27/07/2026 | 27/07/2026 | Job-to-apply flow checklist |
+| Thứ 3 | Bổ sung trang chi tiết tin tuyển dụng cho cả ứng viên và doanh nghiệp. | 28/07/2026 | 28/07/2026 | Job detail UX notes |
+| Thứ 4 | Đồng bộ lại lịch sử ứng tuyển, trạng thái, ghi chú công ty và thư giới thiệu ứng viên. | 29/07/2026 | 29/07/2026 | Application timeline validation |
+| Thứ 5 | Thiết kế lại giao diện bằng Ant Design components và icon để thống nhất trải nghiệm. | 30/07/2026 | 30/07/2026 | Ant Design component library |
+| Thứ 6 | Đưa background thương hiệu JobGo vào giao diện và tối ưu hiển thị cho guest lẫn user đã đăng nhập. | 31/07/2026 | 31/07/2026 | JobGo design notes |
+| Thứ 7 | Bổ sung log lỗi nghiệp vụ và kiểm tra lại message hiển thị để dễ theo dõi trên CloudWatch. | 01/08/2026 | 01/08/2026 | CloudWatch log review |
 
 ### Kết quả đạt được
 
-Frontend có thể thao tác với dữ liệu thật từ backend. Người dùng sau khi đăng nhập được điều hướng tới giao diện phù hợp với role của mình.
+- Luồng ứng tuyển trở nên mượt và nhất quán hơn giữa các trang.
+- Giao diện JobGo đã sẵn sàng để trình diễn với hình ảnh sản phẩm rõ ràng hơn.

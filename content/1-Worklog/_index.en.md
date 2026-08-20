@@ -1,38 +1,17 @@
-﻿---
+---
 title: "Worklog"
-date: 2024-01-01
+date: 2026-06-15
 weight: 1
 chapter: false
 pre: " <b> 1. </b> "
 ---
 
-This worklog records the learning and implementation process for the **Cloud-based Student Internship Portal on AWS** project. The work is divided into two main parts:
+# Worklog
 
-- **Backend:** requirement analysis, database design, FastAPI API development, JWT authentication, role-based authorization, and business-flow testing.
-- **AWS and deployment:** learning the cloud services required by the project, including EC2, S3, RDS PostgreSQL, IAM, Security Groups, CloudWatch, and the frontend/backend deployment process.
+This section records the end-to-end execution of **JobGo** from **15/06/2026** to **05/09/2026**, following a **Monday-to-Saturday** working schedule. The worklog focuses on three parallel streams:
 
-### Weekly Overview
+- Requirements analysis and AWS-oriented architecture design.
+- Implementation of the core JobGo business flows for candidates, companies, and administrators.
+- Completion of the AI Matching Engine, operational hardening, and handover documentation.
 
-**Week 1:** [Project kickoff, problem discovery, and AWS fundamentals](1.1-week1/)
-
-**Week 2:** [Requirement analysis and frontend architecture design](1.2-week2/)
-
-**Week 3:** [Develop the authentication interface and the student interface.](1.3-week3/)
-
-**Week 4:** [Business interface and admin](1.4-week4/)
-
-**Week 5:** [Add CV upload functionality and build a community forum](1.5-week5/)
-
-**Week 6:** [Develop a detailed statistics page and test the entire interface](1.6-week6/)
-
-**Week 7:** [Connect to the backend and run a test](1.7-week7/)
-
-**Week 8:** [Final testing and debugging, report writing](1.8-week8/)
-
-**Week 9:** [....](1.9-week9/)
-
-**Week 10:** [....](1.10-week10/)
-
-**Week 11:** [....](1.11-week11/)
-
-**Week 12:** [....](1.12-week12/)
+Each weekly entry reflects the actual project progression and consistently treats JobGo as a system prepared for AWS deployment rather than a local-only prototype.

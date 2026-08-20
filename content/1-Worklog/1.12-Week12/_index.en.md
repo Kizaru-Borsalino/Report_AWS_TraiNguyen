@@ -1,26 +1,29 @@
-﻿---
-title: "Week 12 - Monitoring and Finalization"
-date: 2024-01-01
+---
+title: "Week 12 - Final reporting and handover"
+date: 2026-08-31
 weight: 12
 chapter: false
 pre: " <b> 1.12. </b> "
 ---
 
-### Goals
+### Objectives
 
-- Monitor the backend with CloudWatch Logs.
-- Retest the demo flow after deployment.
-- Complete the internship report.
+- Finalize the bilingual report, architecture documentation, workshop notes, and demo script.
+- Turn the internship output into a coherent product story around JobGo.
+- Review cost controls and prepare the AWS resource handover plan.
 
-### Work Completed
+### Tasks Completed
 
-| Day | Task | Start Date | Completion Date | Reference |
+| Day | Task | Start date | End date | References |
 | --- | --- | --- | --- | --- |
-| Day 1 | Configure backend logs<br>Send stdout/stderr to CloudWatch Logs | 2025-10-27 | 2025-10-27 | CloudWatch Logs Docs / Project checklist |
-| Day 2 | Check health endpoint<br>Ensure backend remains active after deployment | 2025-10-28 | 2025-10-28 | CloudWatch Logs Docs / Project checklist |
-| Day 3 | Run final demo flow<br>Company posts, admin approves, student applies, company updates status | 2025-10-29 | 2025-10-29 | CloudWatch Logs Docs / Project checklist |
-| Day 4 | Prepare documentation<br>Write proposal, project, workshop, and self-evaluation sections | 2025-10-30 | 2025-10-30 | CloudWatch Logs Docs / Project checklist |
+| Monday | Rewrote the home page, worklog, proposal, and project sections for JobGo deployed on AWS. | 31/08/2026 | 31/08/2026 | Internship report outline |
+| Tuesday | Updated self-evaluation, feedback, references, and the workshop deployment guide. | 01/09/2026 | 01/09/2026 | Documentation checklist |
+| Wednesday | Prepared the demo script covering guest browsing, AI matching, applications, and hiring approval. | 02/09/2026 | 02/09/2026 | Demo flow storyboard |
+| Thursday | Performed a final review of visuals, section links, English-Vietnamese terminology, and tables. | 03/09/2026 | 03/09/2026 | Content QA checklist |
+| Friday | Summarized the AWS cost estimate for JobGo and proposed post-internship optimizations. | 04/09/2026 | 04/09/2026 | AWS pricing notes |
+| Saturday | Handed over the system documents, deployment runbook, and AWS resource inventory. | 05/09/2026 | 05/09/2026 | Handover checklist |
 
-### Results
+### Outcomes
 
-The project was completed as a practical demo with an AWS deployment model and documentation covering the problem, solution, architecture, weekly progress, and lessons learned.
+- The internship report now fully reflects the journey of building JobGo as an AWS-hosted recruitment platform.
+- The handover package is ready for the team or mentor to continue extending the system after the internship.

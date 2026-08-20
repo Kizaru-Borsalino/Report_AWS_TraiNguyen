@@ -1,6 +1,6 @@
-﻿---
-title: "Tuần 3 - Authentication và database"
-date: 2024-01-01
+---
+title: "Tuần 3 - Hồ sơ ứng viên và lưu trữ CV trên S3"
+date: 2026-06-29
 weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
@@ -8,18 +8,22 @@ pre: " <b> 1.3. </b> "
 
 ### Mục tiêu
 
-- Xây dựng đăng ký, đăng nhập và xác thực bằng JWT.
-- Hoàn thiện các model cốt lõi.
-- Thiết lập migration bằng Alembic.
+- Hoàn thiện hồ sơ ứng viên và danh sách CV theo mô hình lưu trữ tệp an toàn.
+- Tích hợp Amazon S3 private bucket cho upload và download CV.
+- Đảm bảo doanh nghiệp chỉ xem CV thông qua luồng được cấp quyền.
 
 ### Công việc đã thực hiện
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu |
 | --- | --- | --- | --- | --- |
-| 2 | Thiết lập API client để gọi backend và xử lý lỗi phiên đăng nhập.<br> | 22/06/2026 | 23/06/2026 | JWT Docs / FastAPI / API Docs |
-| 4 | Phát triển giao diện dành cho sinh viên: dashboard, danh sách internship, danh sách công ty, hồ sơ cá nhân và trang quản lý đơn ứng tuyển.<br> | 24/06/2026 | 27/06/2026 | FastAPI / API Docs |
-
+| Thứ 2 | Thiết kế student profile với trường học, chuyên ngành, kỹ năng, vị trí mong muốn và liên kết xã hội. | 29/06/2026 | 29/06/2026 | Profile field specification |
+| Thứ 3 | Xây API cập nhật hồ sơ ứng viên và validate dữ liệu đầu vào theo master data. | 30/06/2026 | 30/06/2026 | Profile API contract |
+| Thứ 4 | Tích hợp upload CV lên S3 private bucket và lưu object key trong PostgreSQL. | 01/07/2026 | 01/07/2026 | Amazon S3 upload design |
+| Thứ 5 | Triển khai presigned URL để tải CV đúng quyền và đúng thời hạn truy cập. | 02/07/2026 | 02/07/2026 | S3 presigned URL docs |
+| Thứ 6 | Kiểm thử luồng thêm nhiều CV, chọn CV mặc định và xóa CV chưa được sử dụng. | 03/07/2026 | 03/07/2026 | Resume management checklist |
+| Thứ 7 | Bổ sung log tải tệp và lỗi truy cập để theo dõi trên CloudWatch Logs. | 04/07/2026 | 04/07/2026 | CloudWatch logging notes |
 
 ### Kết quả đạt được
 
-Hệ thống có nền tảng đăng nhập và phân quyền ban đầu. Các API có thể xác định người dùng hiện tại và kiểm tra quyền trước khi xử lý nghiệp vụ.
+- Ứng viên đã có thể quản lý hồ sơ và CV theo mô hình lưu trữ production-ready trên AWS.
+- Luồng truy cập CV an toàn hơn vì file không công khai trực tiếp.

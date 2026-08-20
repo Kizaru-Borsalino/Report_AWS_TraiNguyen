@@ -1,25 +1,29 @@
-﻿---
-title: "Week 10 - RDS PostgreSQL"
-date: 2024-01-01
+---
+title: "Week 10 - Building the AI Matching Engine"
+date: 2026-08-17
 weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
 
-### Goals
+### Objectives
 
-- Move the production database to Amazon RDS PostgreSQL.
-- Connect the EC2 backend to RDS securely.
+- Implement the relevance engine that scores candidate profiles against job descriptions.
+- Expose AI Matching to candidates on the job board and to companies on the applicant list.
+- Rank applicants by match score to accelerate hiring decisions.
 
-### Work Completed
+### Tasks Completed
 
-| Day | Task | Start Date | Completion Date | Reference |
+| Day | Task | Start date | End date | References |
 | --- | --- | --- | --- | --- |
-| Day 1 | Create RDS PostgreSQL<br>Production database `internship_portal` | 2025-10-13 | 2025-10-13 | Amazon RDS Docs / Alembic Docs |
-| Day 2 | Configure security group<br>Only EC2 backend can access port 5432 | 2025-10-14 | 2025-10-14 | Amazon RDS Docs / Alembic Docs |
-| Day 3 | Update `DATABASE_URL`<br>Backend connects to RDS instead of SQLite | 2025-10-15 | 2025-10-15 | Amazon RDS Docs / Alembic Docs |
-| Day 4 | Run Alembic migration<br>Create production schema | 2025-10-16 | 2025-10-16 | Amazon RDS Docs / Alembic Docs |
+| Monday | Designed a weighted scoring formula for skills, position, level, location, employment type, and work mode. | 17/08/2026 | 17/08/2026 | Matching formula notes |
+| Tuesday | Built a backend service returning the overall score, qualitative label, matched skills, and missing skills. | 18/08/2026 | 18/08/2026 | Matching service contract |
+| Wednesday | Attached matching results to the public jobs API for signed-in candidates with completed profiles. | 19/08/2026 | 19/08/2026 | Public jobs API integration |
+| Thursday | Displayed a highlighted AI Matching badge in job cards and detailed job drawers. | 20/08/2026 | 20/08/2026 | Frontend matching UI |
+| Friday | Sorted company applicant lists by descending match score. | 21/08/2026 | 21/08/2026 | Applicant ranking logic |
+| Saturday | Verified that profile updates refresh matching scores immediately without requiring re-login. | 22/08/2026 | 22/08/2026 | Matching refresh test plan |
 
-### Results
+### Outcomes
 
-The database is separated from the backend server, which better matches cloud architecture. Alembic keeps the local and production schemas consistent.
+- The AI Matching Engine became the flagship capability of JobGo.
+- Companies can prioritize strong candidates, while students receive quantitative feedback before applying.

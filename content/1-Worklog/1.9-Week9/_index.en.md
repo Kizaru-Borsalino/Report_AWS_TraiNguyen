@@ -1,25 +1,29 @@
-﻿---
-title: "Week 9 - EC2 and Backend Deployment"
-date: 2024-01-01
+---
+title: "Week 9 - Preparing normalized data for AI Matching"
+date: 2026-08-10
 weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
 
-### Goals
+### Objectives
 
-- Learn how to deploy the FastAPI backend to Amazon EC2.
-- Configure basic networking and security groups.
+- Add the missing candidate-profile fields required for matching.
+- Restructure master data, especially job level and employment-type dimensions.
+- Ensure the frontend and backend share the same normalized data model.
 
-### Work Completed
+### Tasks Completed
 
-| Day | Task | Start Date | Completion Date | Reference |
+| Day | Task | Start date | End date | References |
 | --- | --- | --- | --- | --- |
-| Day 1 | Create an EC2 instance<br>Prepared a Linux environment for the backend | 2025-10-06 | 2025-10-06 | Amazon EC2 Docs / IAM Docs |
-| Day 2 | Install Python, venv, and dependencies<br>Backend can run with Uvicorn | 2025-10-07 | 2025-10-07 | Amazon EC2 Docs / IAM Docs |
-| Day 3 | Open testing port<br>Temporarily allowed access through port 8000 | 2025-10-08 | 2025-10-08 | Amazon EC2 Docs / IAM Docs |
-| Day 4 | Check health endpoint<br>`/health` returns service status | 2025-10-09 | 2025-10-09 | Amazon EC2 Docs / IAM Docs |
+| Monday | Replaced the generic category master data with a job-level catalog such as Intern, Fresher, Junior, Middle, and Senior. | 10/08/2026 | 10/08/2026 | Master data redesign notes |
+| Tuesday | Added skills, desired position, location, work mode, employment type, and level to the student profile. | 11/08/2026 | 11/08/2026 | Matching field matrix |
+| Wednesday | Updated company forms to reuse the same master-data catalogs as the candidate side. | 12/08/2026 | 12/08/2026 | Shared master data contract |
+| Thursday | Added input-validation rules to prevent free-text drift that would break scoring. | 13/08/2026 | 13/08/2026 | Validation rules |
+| Friday | Reviewed the job and profile API responses to make them ready for matching results. | 14/08/2026 | 14/08/2026 | API response design |
+| Saturday | Verified that candidate profile updates immediately change the matching inputs on AWS. | 15/08/2026 | 15/08/2026 | Matching readiness checklist |
 
-### Results
+### Outcomes
 
-The backend has a clear deployment path on EC2. The team gained practical understanding of security groups, inbound rules, SSH, and running a backend service in the cloud.
+- The AI Matching inputs are now normalized and rich enough to calculate relevance.
+- JobGo now has a clearer master-data foundation for both user experience and system logic.

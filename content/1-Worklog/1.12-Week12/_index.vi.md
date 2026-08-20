@@ -1,6 +1,6 @@
-﻿---
-title: "Tuần 12 - Monitoring và hoàn thiện"
-date: 2024-01-01
+---
+title: "Tuần 12 - Tổng hợp báo cáo và bàn giao"
+date: 2026-08-31
 weight: 12
 chapter: false
 pre: " <b> 1.12. </b> "
@@ -8,19 +8,22 @@ pre: " <b> 1.12. </b> "
 
 ### Mục tiêu
 
-- Theo dõi backend bằng CloudWatch Logs.
-- Kiểm thử lại luồng demo sau khi deploy.
-- Hoàn thiện báo cáo thực tập.
+- Hoàn thiện báo cáo song ngữ, tài liệu kiến trúc, workshop và demo script.
+- Tổng hợp kết quả thực tập thành một câu chuyện sản phẩm hoàn chỉnh cho JobGo.
+- Rà soát chi phí và lập kế hoạch bàn giao tài nguyên AWS.
 
 ### Công việc đã thực hiện
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu |
 | --- | --- | --- | --- | --- |
-| 2 | Cấu hình log backend<br>Gửi stdout/stderr lên CloudWatch Logs | 27/10/2025 | 27/10/2025 | CloudWatch Logs Docs / Project checklist |
-| 3 | Kiểm tra health endpoint<br>Đảm bảo backend còn hoạt động sau deploy | 28/10/2025 | 28/10/2025 | CloudWatch Logs Docs / Project checklist |
-| 4 | Demo final flow<br>Company đăng bài, admin duyệt, student apply, company cập nhật trạng thái | 29/10/2025 | 29/10/2025 | CloudWatch Logs Docs / Project checklist |
-| 5 | Tổng hợp tài liệu<br>Viết proposal, project, workshop và self-evaluation | 30/10/2025 | 30/10/2025 | CloudWatch Logs Docs / Project checklist |
+| Thứ 2 | Viết lại trang chủ, worklog, proposal và project section theo nội dung JobGo triển khai trên AWS. | 31/08/2026 | 31/08/2026 | Internship report outline |
+| Thứ 3 | Cập nhật self-evaluation, feedback, references và workshop deployment guide. | 01/09/2026 | 01/09/2026 | Documentation checklist |
+| Thứ 4 | Chuẩn bị kịch bản demo gồm guest browsing, AI matching, ứng tuyển và phê duyệt tuyển dụng. | 02/09/2026 | 02/09/2026 | Demo flow storyboard |
+| Thứ 5 | Rà soát lần cuối các ảnh minh họa, link section, thuật ngữ Anh - Việt và bảng biểu. | 03/09/2026 | 03/09/2026 | Content QA checklist |
+| Thứ 6 | Tổng hợp ước tính chi phí AWS cho JobGo và đề xuất tối ưu sau kỳ thực tập. | 04/09/2026 | 04/09/2026 | AWS pricing notes |
+| Thứ 7 | Bàn giao tài liệu hệ thống, runbook triển khai và danh sách tài nguyên AWS đang sử dụng. | 05/09/2026 | 05/09/2026 | Handover checklist |
 
 ### Kết quả đạt được
 
-Dự án hoàn thiện ở mức demo thực tế, có mô hình triển khai trên AWS và có tài liệu báo cáo mô tả đầy đủ từ problem, solution, kiến trúc đến quá trình làm việc hàng tuần.
+- Báo cáo thực tập đã phản ánh đầy đủ quá trình xây dựng JobGo như một sản phẩm web tuyển dụng chạy trên AWS.
+- Hồ sơ bàn giao đã sẵn sàng để nhóm hoặc mentor tiếp tục mở rộng sau kỳ thực tập.

@@ -1,23 +1,29 @@
-﻿---
-title: "Week 7 - Connect to the backend and run a test."
-date: 2024-01-01
+---
+title: "Week 7 - Business flow completion and UX refinement"
+date: 2026-07-27
 weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
 
-### Goals
+### Objectives
 
-- Build the frontend using Vite and prepare for deployment.
-- Connect the backend and run a test.
+- Resolve the remaining business-flow gaps between jobs, application, and history pages.
+- Upgrade the JobGo visual identity and standardize fully accented Vietnamese content.
+- Improve visibility into UI and API issues.
 
-### Work Completed
+### Tasks Completed
 
-| Day | Task | Start Date | Completion Date | Reference |
+| Day | Task | Start date | End date | References |
 | --- | --- | --- | --- | --- |
-| 2 | Configure the VITE_API_URL environment variable, perform a production build using Vite, and prepare the frontend for deployment to S3/CloudFront.<br> | 20/07/2026 | 21/07/2026 | Vite Build Docs / AWS S3 / Hosting Docs |
-| 4 | Run and perform end-to-end testing after connecting the frontend to the production backend.<br> | 22/07/2026 | 25/07/2026 | Demo checklist |
+| Monday | Fixed the transition from the job board to the application page after selecting a job. | 27/07/2026 | 27/07/2026 | Job-to-apply flow checklist |
+| Tuesday | Added detailed job views for both candidates and companies. | 28/07/2026 | 28/07/2026 | Job detail UX notes |
+| Wednesday | Resynchronized application history, statuses, company notes, and candidate cover letters. | 29/07/2026 | 29/07/2026 | Application timeline validation |
+| Thursday | Refined the interface using Ant Design components and icons for a consistent experience. | 30/07/2026 | 30/07/2026 | Ant Design component library |
+| Friday | Applied the JobGo branded background and improved the layout for both guests and signed-in users. | 31/07/2026 | 31/07/2026 | JobGo design notes |
+| Saturday | Added business-error logging and cleaned up user-facing messages for easier CloudWatch tracking. | 01/08/2026 | 01/08/2026 | CloudWatch log review |
 
-### Results
+### Outcomes
 
-The frontend can work with real backend data. After login, users are routed to the interface that matches their role.
+- The application journey became smoother and more consistent across pages.
+- The JobGo interface is now ready for demo with a clearer product identity.

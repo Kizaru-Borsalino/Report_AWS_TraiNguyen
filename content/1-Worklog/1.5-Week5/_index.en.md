@@ -1,24 +1,29 @@
-﻿---
-title: "Week 5 - Add CV upload functionality and build a community forum."
-date: 2024-01-01
+---
+title: "Week 5 - Applications, status management, and approval flow"
+date: 2026-07-13
 weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
 
-### Goals
+### Objectives
 
-- Added CV upload functionality; fixed display issues regarding status notifications for students and businesses.
-- Developed a forum page to facilitate communication between businesses and students.
+- Connect the complete application lifecycle across candidates, companies, and admins.
+- Manage application statuses and notifications.
+- Run the backend on Amazon ECS Fargate in the staging environment.
 
-### Work Completed
+### Tasks Completed
 
-| Day | Task | Start Date | Completion Date | Reference |
+| Day | Task | Start date | End date | References |
 | --- | --- | --- | --- | --- |
-| 3 | Integrate CV upload functionality, application status display, and notifications for students/businesses.<br> | 07/07/2026 | 08/07/2026 | Amazon S3 / Flow / Backend API Docs |
-| 5 | Build a community forum page: categories, post lists, post details, comments, likes, and post saving.<br> | 09/07/2026 | 11/07/2026 | Project Forum / API Docs |
+| Monday | Built the application API with resume selection, cover letter support, and duplicate checks. | 13/07/2026 | 13/07/2026 | Application API contract |
+| Tuesday | Implemented application status history plus withdraw-and-reapply capability. | 14/07/2026 | 14/07/2026 | Application status model |
+| Wednesday | Implemented the admin approval flow before jobs become public. | 15/07/2026 | 15/07/2026 | Admin moderation checklist |
+| Thursday | Generated notifications for new applications, status updates, and approved job posts. | 16/07/2026 | 16/07/2026 | Notification flow design |
+| Friday | Created the task definition, service, and ALB target group for the staging backend on ECS Fargate. | 17/07/2026 | 17/07/2026 | ECS Fargate deployment notes |
+| Saturday | Executed end-to-end smoke tests against the staging environment using seed data. | 18/07/2026 | 18/07/2026 | Staging smoke test checklist |
 
-### Results
+### Outcomes
 
-- Successfully added the CV upload function and fixed an issue with status notification displays for students and businesses.
-- Completed the basic forum page, enabling businesses and students to post content and interact with one another.
+- The core application lifecycle is complete and demonstrable on AWS staging.
+- Administrators can now control job quality before listings are made public.

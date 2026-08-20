@@ -1,68 +1,95 @@
-﻿---
+---
 title: "Bản đề xuất"
-date: 2024-01-01
+date: 2026-06-29
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
 
-## 1. Tóm tắt dự án
+# JobGo trên AWS
 
-Dự án xây dựng một cổng thông tin thực tập cho sinh viên trên nền tảng cloud. Hệ thống hỗ trợ sinh viên tạo hồ sơ, tải CV, tìm kiếm vị trí thực tập và nộp đơn. Doanh nghiệp có thể đăng tin tuyển thực tập, xem danh sách ứng viên và cập nhật trạng thái hồ sơ. Admin quản lý người dùng, duyệt bài đăng, quản lý kỹ năng, vị trí tuyển dụng và nội dung cộng đồng.
+## Xây dựng nền tảng tuyển dụng và tìm việc tích hợp AI Matching trên AWS
 
-Mục tiêu của dự án là tạo một web application hoàn chỉnh có frontend, backend, database, file storage, authentication, logging và khả năng triển khai lên AWS.
+### 1. Tóm tắt dự án
 
-## 2. Problem
+**JobGo** là một nền tảng tuyển dụng trực tuyến giúp ứng viên tìm việc phù hợp nhanh hơn và giúp doanh nghiệp sàng lọc hồ sơ hiệu quả hơn. Hệ thống cung cấp các chức năng cốt lõi như quản lý hồ sơ ứng viên, quản lý hồ sơ doanh nghiệp, đăng tin tuyển dụng, nộp đơn ứng tuyển, theo dõi trạng thái hồ sơ, quản trị danh mục dữ liệu dùng chung và **AI Matching** để đo mức độ phù hợp giữa hồ sơ ứng viên với tin tuyển dụng.
 
-Sinh viên thường phải tìm thông tin thực tập qua nhiều nguồn rời rạc như mạng xã hội, email, website công ty hoặc các biểu mẫu thủ công. Điều này gây khó khăn trong việc theo dõi trạng thái ứng tuyển, quản lý CV và đánh giá cơ hội phù hợp.
+Thay vì triển khai như một bài tập chạy cục bộ, dự án được định hướng ngay từ đầu cho môi trường **AWS production** với các thành phần:
 
-Ở phía doanh nghiệp, việc nhận hồ sơ qua nhiều kênh khiến quá trình lọc ứng viên, cập nhật trạng thái và phản hồi thiếu tập trung. Nhà trường hoặc đơn vị quản trị cũng khó kiểm soát chất lượng bài đăng, tài khoản người dùng và dữ liệu thống kê về nhu cầu tuyển dụng.
+- **Amazon CloudFront + Amazon S3** cho frontend React.
+- **Amazon ECS Fargate + Application Load Balancer** cho backend FastAPI.
+- **Amazon RDS for PostgreSQL** cho dữ liệu quan hệ.
+- **Amazon S3 private bucket** để lưu CV ứng viên.
+- **Amazon CloudWatch Logs** để giám sát và theo dõi lỗi.
 
-Các vấn đề chính:
+### 2. Bài toán cần giải quyết
 
-- Thiếu một nền tảng tập trung cho sinh viên và doanh nghiệp.
-- CV và thông tin ứng tuyển chưa được quản lý an toàn, có phân quyền.
-- Quy trình duyệt bài tuyển dụng chưa rõ ràng.
-- Không có dashboard để theo dõi số lượng bài đăng, ứng viên, kỹ năng và vị trí tuyển dụng phổ biến.
-- Việc triển khai thủ công trên máy cá nhân không đáp ứng yêu cầu vận hành thực tế.
+Quá trình tìm việc và tuyển dụng hiện nay thường gặp ba nhóm vấn đề:
 
-## 3. Solution
+1. **Dữ liệu phân tán:** ứng viên phải tìm việc qua nhiều kênh khác nhau, khó theo dõi trạng thái và quản lý CV.
+2. **Sàng lọc thủ công:** doanh nghiệp mất nhiều thời gian để đọc hồ sơ và so sánh mức độ phù hợp giữa ứng viên với tin tuyển dụng.
+3. **Thiếu quản trị tập trung:** nếu không có cơ chế duyệt bài đăng, chuẩn hóa danh mục dữ liệu và phân quyền rõ ràng, chất lượng nền tảng sẽ giảm nhanh.
 
-Giải pháp là xây dựng **Student Internship Portal** theo mô hình web application triển khai trên AWS:
+JobGo giải quyết các vấn đề đó bằng một hệ thống tập trung, đa vai trò, có master data rõ ràng và tích hợp engine chấm điểm phù hợp.
 
-- **Frontend ReactJS + Vite** cung cấp giao diện cho student, company và admin.
-- **Backend FastAPI** cung cấp REST API, xử lý nghiệp vụ và phân quyền.
-- **JWT Authentication** bảo vệ API và phân tách quyền theo vai trò.
-- **Amazon RDS PostgreSQL** lưu dữ liệu người dùng, hồ sơ, bài đăng, đơn ứng tuyển, kỹ năng, thông báo và diễn đàn.
-- **Amazon S3** lưu CV trong private bucket; backend chỉ lưu object key và tạo presigned URL tạm thời khi người dùng hợp lệ cần xem file.
-- **EC2** chạy backend FastAPI.
-- **S3 Static Website Hosting hoặc CloudFront** phục vụ frontend production build.
-- **CloudWatch Logs** thu thập log backend và hỗ trợ theo dõi lỗi khi vận hành.
+### 3. Giải pháp đề xuất
 
-## 4. Kiến trúc tổng quan
+#### Luồng chức năng chính
+
+- **Ứng viên**
+  - Đăng ký, đăng nhập, cập nhật hồ sơ.
+  - Tải nhiều CV và chọn CV để ứng tuyển.
+  - Xem danh sách việc làm công khai.
+  - Xem điểm **AI Matching** theo từng tin tuyển dụng.
+  - Gửi đơn, rút đơn, xem lịch sử và trạng thái ứng tuyển.
+
+- **Doanh nghiệp**
+  - Quản lý hồ sơ công ty.
+  - Tạo và quản lý nhiều tin tuyển dụng.
+  - Xem danh sách ứng viên cho từng job.
+  - Xem điểm **AI Matching** của từng ứng viên.
+  - Cập nhật trạng thái ứng tuyển và ghi chú phản hồi.
+
+- **Quản trị viên**
+  - Duyệt bài đăng trước khi hiển thị công khai.
+  - Quản lý master data như kỹ năng, vị trí, địa điểm, loại hình, hình thức làm việc, cấp bậc.
+  - Theo dõi tài khoản và hoạt động chung của hệ thống.
+
+#### AI Matching Engine
+
+AI Matching của JobGo được thiết kế như một dịch vụ chấm điểm có trọng số, dựa trên:
+
+- Kỹ năng
+- Vị trí
+- Cấp bậc
+- Địa điểm
+- Hình thức làm việc
+- Loại hình công việc
+
+Kết quả trả về bao gồm:
+
+- Điểm phù hợp tổng thể theo phần trăm
+- Mức đánh giá định tính
+- Điểm thành phần theo từng chiều
+- Danh sách kỹ năng phù hợp
+- Danh sách kỹ năng còn thiếu
+
+### 4. Kiến trúc triển khai trên AWS
 
 ```text
 User Browser
-  -> Frontend React on S3/CloudFront
-  -> FastAPI Backend on EC2
+  -> CloudFront
+  -> S3 static frontend
+  -> Application Load Balancer
+  -> ECS Fargate service (FastAPI backend)
   -> Amazon RDS PostgreSQL
-  -> Amazon S3 private bucket for CV files
-  -> Amazon CloudWatch Logs
+  -> Amazon S3 private bucket (CV files)
+  -> CloudWatch Logs / Alarms
 ```
 
-Luồng chính của hệ thống:
+### 5. Kết quả kỳ vọng
 
-1. Người dùng đăng ký hoặc đăng nhập.
-2. Backend xác thực tài khoản và trả JWT.
-3. Student cập nhật hồ sơ, upload CV và ứng tuyển vào bài đăng đã được duyệt.
-4. Company tạo hồ sơ công ty, đăng vị trí thực tập và xem danh sách ứng viên.
-5. Admin duyệt bài đăng, quản lý người dùng, kỹ năng và vị trí tuyển dụng.
-6. Khi trạng thái ứng tuyển hoặc bài đăng thay đổi, hệ thống tạo notification cho người liên quan.
-
-## 5. Lợi ích
-
-- Tập trung hóa quá trình tìm kiếm và quản lý thực tập.
-- Tăng tính minh bạch nhờ trạng thái ứng tuyển rõ ràng.
-- Bảo vệ CV bằng private S3 bucket và presigned URL.
-- Dễ mở rộng database và backend khi lượng người dùng tăng.
-- Phù hợp với chủ đề **Application Development on AWS** vì ứng dụng có đủ lớp frontend, backend, database, storage và monitoring.
+- Có một web tuyển dụng hoạt động theo đúng vai trò nghiệp vụ.
+- Có AI Matching giúp ứng viên và doanh nghiệp ra quyết định nhanh hơn.
+- Có kiến trúc triển khai thực tế trên AWS, không phụ thuộc chạy local.
+- Có tài liệu song ngữ đủ để demo, bàn giao và mở rộng hệ thống sau kỳ thực tập.

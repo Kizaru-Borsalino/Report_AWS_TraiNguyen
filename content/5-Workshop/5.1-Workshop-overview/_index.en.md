@@ -1,42 +1,40 @@
-﻿---
-title : "Architecture Overview"
-date : 2024-01-01
-weight : 1
-chapter : false
-pre : " <b> 5.1. </b> "
+---
+title: "Workshop Overview"
+date: 2026-08-05
+weight: 1
+chapter: false
+pre: " <b> 5.1. </b> "
 ---
 
-The workshop deploys the **Student Internship Portal** on AWS using a multi-component web application architecture.
+## Context
 
-## Main Components
+JobGo is a multi-role recruitment platform serving guests, candidates, companies, and administrators. The challenge is not limited to UI and CRUD flows; it also requires:
+
+- efficient frontend delivery,
+- stable backend API runtime,
+- secure resume storage,
+- a clean separation between relational data and file storage,
+- and operational visibility after deployment.
+
+## Workshop goals
+
+This workshop describes how to deploy JobGo on AWS in a basic production-oriented model:
+
+- React frontend through **Amazon S3 + CloudFront**
+- FastAPI backend through **Amazon ECS Fargate + ALB**
+- relational data on **Amazon RDS PostgreSQL**
+- resumes on a **private S3 bucket**
+- logging and validation through **Amazon CloudWatch**
+
+## High-level architecture
 
 ```text
-Browser
-  -> React Frontend on S3/CloudFront
-  -> FastAPI Backend on EC2
+User Browser
+  -> CloudFront
+  -> S3 static frontend
+  -> Application Load Balancer
+  -> ECS Fargate service (FastAPI backend)
   -> Amazon RDS PostgreSQL
-  -> Amazon S3 private bucket for CV files
-  -> Amazon CloudWatch Logs
+  -> Amazon S3 private bucket (resume files)
+  -> CloudWatch Logs / Alarms
 ```
-## Project architecture
-![Architectural photos of the project](/images/cloud_aws_architec.png)
-
-
-## Service Roles
-
-- **Amazon EC2:** runs the FastAPI backend with Uvicorn.
-- **Amazon RDS PostgreSQL:** stores business data such as users, profiles, companies, internship posts, applications, skills, notifications, and forum data.
-- **Amazon S3:** stores CV files in a private bucket and can also host frontend static build files.
-- **Amazon CloudFront:** distributes the frontend through HTTPS and improves access speed.
-- **IAM Role:** grants the backend minimal access to S3.
-- **Security Group:** controls traffic to EC2 and RDS.
-- **CloudWatch Logs:** collects backend logs for troubleshooting and monitoring.
-
-## CV Upload Flow
-
-1. A student uploads a CV from the frontend.
-2. The frontend sends the request to the FastAPI backend.
-3. The backend checks authorization, file type, and file size.
-4. The backend uploads the file to the private S3 bucket.
-5. The database stores the object key.
-6. When a company needs to view the CV, the backend generates a temporary presigned URL if the company is authorized.

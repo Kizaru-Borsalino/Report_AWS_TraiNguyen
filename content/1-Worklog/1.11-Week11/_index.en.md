@@ -1,26 +1,29 @@
-﻿---
-title: "Week 11 - Frontend Deployment"
-date: 2024-01-01
+---
+title: "Week 11 - AWS deployment hardening and operations"
+date: 2026-08-24
 weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
 
-### Goals
+### Objectives
 
-- Build the React app for production.
-- Deploy the frontend to S3 Static Website Hosting or CloudFront.
-- Configure CORS between the frontend and backend.
+- Finalize the AWS production setup for frontend, backend, database, and storage.
+- Improve observability, configuration security, and basic backup readiness.
+- Prepare the build pipeline and deployment checklist.
 
-### Work Completed
+### Tasks Completed
 
-| Day | Task | Start Date | Completion Date | Reference |
+| Day | Task | Start date | End date | References |
 | --- | --- | --- | --- | --- |
-| Day 1 | Configure `VITE_API_URL`<br>Frontend calls the production backend | 2025-10-20 | 2025-10-20 | Amazon S3 Hosting / CloudFront Docs |
-| Day 2 | Build frontend<br>Created the Vite `dist` folder | 2025-10-21 | 2025-10-21 | Amazon S3 Hosting / CloudFront Docs |
-| Day 3 | Upload to S3<br>Served static assets through S3/CloudFront | 2025-10-22 | 2025-10-22 | Amazon S3 Hosting / CloudFront Docs |
-| Day 4 | Configure backend CORS<br>Allowed only the valid frontend domain | 2025-10-23 | 2025-10-23 | Amazon S3 Hosting / CloudFront Docs |
+| Monday | Reviewed the ECS service, autoscaling policy, health checks, and rollback strategy for the JobGo backend. | 24/08/2026 | 24/08/2026 | ECS operations checklist |
+| Tuesday | Standardized secrets management using Systems Manager Parameter Store or AWS Secrets Manager. | 25/08/2026 | 25/08/2026 | Secrets management notes |
+| Wednesday | Configured CloudWatch Logs, metric filters, and alarms for critical backend failures. | 26/08/2026 | 26/08/2026 | CloudWatch alarms guide |
+| Thursday | Reviewed the RDS snapshot policy and S3 versioning for the resume bucket. | 27/08/2026 | 27/08/2026 | RDS backup, S3 versioning docs |
+| Friday | Completed the deployment checklist: build frontend, push the ECR image, update the ECS service, and invalidate CloudFront cache. | 28/08/2026 | 28/08/2026 | Deployment runbook |
+| Saturday | Ran a production-like smoke test and confirmed that guest, student, company, and admin flows all work correctly. | 29/08/2026 | 29/08/2026 | Production smoke test checklist |
 
-### Results
+### Outcomes
 
-The frontend can be accessed from a browser through AWS hosting. The application connects to the production backend and is ready for an end-to-end demo.
+- The AWS deployment architecture is ready for the final demonstration with stronger operational realism.
+- Infrastructure components now have clearer monitoring and change-control procedures.

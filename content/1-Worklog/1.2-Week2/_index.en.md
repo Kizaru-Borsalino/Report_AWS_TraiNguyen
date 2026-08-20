@@ -1,23 +1,29 @@
-﻿---
-title: "Week 2 - Frontend Requirement Analysis"
-date: 2024-01-01
+---
+title: "Week 2 - Backend foundation and authentication"
+date: 2026-06-22
 weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
 
-### Goals
+### Objectives
 
-- Create the frontend project, determine the technologies to be used, and design the overall layout.
+- Complete the backend skeleton with FastAPI, SQLAlchemy, and migrations.
+- Build registration, login, and role-based access for three user types.
+- Prepare the PostgreSQL database design for the AWS environment.
 
-### Work Completed
+### Tasks Completed
 
-| Day | Task | Start Date | Completion Date | Reference |
+| Day | Task | Start date | End date | References |
 | --- | --- | --- | --- | --- |
-| 2 | Explore ReactJS, Vite, and the project's frontend structure.<br>Initialize the frontend project, install dependencies, and configure the local development environment. | 15/06/2026 | 15/06/2026 | React Docs / Vite Docs |
-| 3 | Initialize the frontend project, install dependencies, and configure the local development environment.<br> | 16/06/2026 | 16/06/2026 | React Docs / Vite Docs |
-| 4 | Design the overall application layout.<br>| 17/06/2026 | 20/06/2026 | React Docs |
+| Monday | Initialized the FastAPI app, settings, dependency injection, and router modules. | 22/06/2026 | 22/06/2026 | FastAPI docs, backend skeleton |
+| Tuesday | Implemented the user schema, role enum, password hashing, and JWT authentication. | 23/06/2026 | 23/06/2026 | JWT design notes |
+| Wednesday | Built registration APIs for students and companies and safely seeded the administrator account. | 24/06/2026 | 24/06/2026 | Auth API contract |
+| Thursday | Created the initial PostgreSQL migration and validated compatibility with Amazon RDS. | 25/06/2026 | 25/06/2026 | Alembic, Amazon RDS docs |
+| Friday | Prepared IAM policies and parameter placeholders for database connection secrets on AWS. | 26/06/2026 | 26/06/2026 | IAM docs, Systems Manager notes |
+| Saturday | Tested multi-role login flows and handled 401, 403, and validation errors. | 27/06/2026 | 27/06/2026 | API smoke test checklist |
 
-### Results
+### Outcomes
 
-Create the frontend project, identifying the technologies to be used and designing the overall layout.
+- The backend foundation became stable, supporting role-based access and future recruitment features.
+- The data design is ready for Amazon RDS deployment without depending on a local-only setup.

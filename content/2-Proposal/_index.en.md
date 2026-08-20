@@ -1,68 +1,59 @@
-﻿---
-title: "Proposal"
-date: 2024-01-01
+---
+title: "Project Proposal"
+date: 2026-06-29
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
 
-## 1. Project Summary
+# JobGo on AWS
 
-The project builds a cloud-based internship portal for students. The system allows students to create profiles, upload CVs, search for internship positions, and submit applications. Companies can publish internship posts, review applicants, and update application statuses. Administrators can manage users, approve internship posts, manage skills and job positions, and moderate community content.
+## Building an AI-assisted recruitment and job discovery platform on AWS
 
-The project goal is to create a complete web application with frontend, backend, database, file storage, authentication, logging, and a deployment path on AWS.
+### 1. Executive Summary
 
-## 2. Problem
+**JobGo** is an online recruitment platform designed to help candidates find the right jobs faster and enable companies to evaluate applicants more efficiently. The system covers candidate profile management, company profile management, job posting, application submission, application-status tracking, centralized master-data administration, and an **AI Matching** engine that estimates the relevance between a candidate profile and a job post.
 
-Students often search for internships across fragmented channels such as social media, email, company websites, and manual forms. This makes it difficult to track application status, manage CVs, and identify suitable opportunities.
+Rather than being treated as a local-only coursework system, the project is intentionally framed for **AWS production deployment** using:
 
-For companies, receiving applications through multiple channels makes candidate screening, status updates, and feedback less centralized. For administrators, it is also difficult to control post quality, user accounts, and recruitment-market statistics.
+- **Amazon CloudFront + Amazon S3** for the React frontend
+- **Amazon ECS Fargate + Application Load Balancer** for the FastAPI backend
+- **Amazon RDS for PostgreSQL** for relational data
+- **A private Amazon S3 bucket** for resume storage
+- **Amazon CloudWatch Logs** for monitoring and troubleshooting
 
-Key problems:
+### 2. Problem Statement
 
-- Lack of a centralized platform for students and companies.
-- CVs and application data are not managed securely with role-based access.
-- Internship post approval is not standardized.
-- There is no dashboard for posts, applicants, skills, or popular job positions.
-- Local-only deployment does not meet real operational requirements.
+Modern hiring workflows typically suffer from three major pain points:
 
-## 3. Solution
+1. **Fragmented data**: candidates search for jobs across disconnected channels and struggle to track resumes and application states.
+2. **Manual screening**: companies spend too much time reading profiles and manually estimating suitability.
+3. **Lack of centralized governance**: without moderation, normalized reference data, and clear access control, platform quality deteriorates quickly.
 
-The proposed solution is a **Student Internship Portal** deployed as a web application on AWS:
+JobGo addresses these issues through a centralized multi-role system with strong master-data governance and a relevance-scoring engine.
 
-- **ReactJS + Vite frontend** for student, company, and admin interfaces.
-- **FastAPI backend** for REST APIs, business logic, and authorization.
-- **JWT Authentication** to protect APIs and separate user roles.
-- **Amazon RDS PostgreSQL** to store users, profiles, companies, internship posts, applications, skills, notifications, and forum data.
-- **Amazon S3** to store CVs in a private bucket; the backend stores only object keys and generates short-lived presigned URLs for authorized users.
-- **Amazon EC2** to run the FastAPI backend.
-- **S3 Static Website Hosting or CloudFront** to serve the production frontend build.
-- **CloudWatch Logs** to collect backend logs and support troubleshooting.
+### 3. Proposed Solution
 
-## 4. Solution Architecture
+- Candidates can build profiles, upload resumes, browse jobs, view AI Matching, and track applications.
+- Companies can maintain profiles, publish jobs, review applicants, and rank them by matching score.
+- Administrators can approve jobs and manage the shared master-data catalog.
+
+### 4. AWS Deployment Architecture
 
 ```text
 User Browser
-  -> React Frontend on S3/CloudFront
-  -> FastAPI Backend on EC2
+  -> CloudFront
+  -> S3 static frontend
+  -> Application Load Balancer
+  -> ECS Fargate service (FastAPI backend)
   -> Amazon RDS PostgreSQL
-  -> Amazon S3 private bucket for CV files
-  -> Amazon CloudWatch Logs
+  -> Amazon S3 private bucket (resume files)
+  -> CloudWatch Logs / Alarms
 ```
 
-Main system flow:
+### 5. Expected Outcome
 
-1. A user registers or logs in.
-2. The backend authenticates the account and returns JWT tokens.
-3. A student updates their profile, uploads a CV, and applies to approved internship posts.
-4. A company creates its profile, publishes internship posts, and reviews applicants.
-5. An admin approves posts, manages users, skills, and job positions.
-6. When an application or post status changes, the system creates a notification for the related user.
-
-## 5. Benefits
-
-- Centralizes internship searching and management.
-- Improves transparency through clear application statuses.
-- Protects CV files using a private S3 bucket and presigned URLs.
-- Makes the database and backend easier to scale as usage grows.
-- Fits the **Application Development on AWS** topic because it includes frontend, backend, database, storage, and monitoring.
+- A working recruitment platform aligned with the intended business roles
+- AI Matching that helps both candidates and companies make faster decisions
+- A production-oriented AWS deployment model instead of a localhost-only setup
+- Bilingual documentation suitable for demo, handover, and future extension

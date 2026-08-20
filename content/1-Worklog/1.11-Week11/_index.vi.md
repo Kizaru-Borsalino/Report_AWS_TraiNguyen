@@ -1,6 +1,6 @@
-﻿---
-title: "Tuần 11 - Deploy frontend"
-date: 2024-01-01
+---
+title: "Tuần 11 - Củng cố triển khai AWS và vận hành"
+date: 2026-08-24
 weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
@@ -8,19 +8,22 @@ pre: " <b> 1.11. </b> "
 
 ### Mục tiêu
 
-- Build React app cho môi trường production.
-- Deploy frontend lên S3 Static Website Hosting hoặc CloudFront.
-- Cấu hình CORS giữa frontend và backend.
+- Hoàn thiện cấu hình production trên AWS cho frontend, backend, database và storage.
+- Tăng cường quan sát, bảo mật cấu hình và khả năng backup cơ bản.
+- Chuẩn bị pipeline build và checklist triển khai.
 
 ### Công việc đã thực hiện
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu |
 | --- | --- | --- | --- | --- |
-| 2 | Cấu hình `VITE_API_URL`<br>Frontend gọi đúng backend production | 20/10/2025 | 20/10/2025 | Amazon S3 Hosting / CloudFront Docs |
-| 3 | Build frontend<br>Tạo thư mục `dist` bằng Vite | 21/10/2025 | 21/10/2025 | Amazon S3 Hosting / CloudFront Docs |
-| 4 | Upload lên S3<br>Public static assets qua S3/CloudFront | 22/10/2025 | 22/10/2025 | Amazon S3 Hosting / CloudFront Docs |
-| 5 | Cấu hình CORS backend<br>Chỉ cho phép frontend domain hợp lệ | 23/10/2025 | 23/10/2025 | Amazon S3 Hosting / CloudFront Docs |
+| Thứ 2 | Rà soát ECS service, autoscaling policy, health check và rollback strategy cho backend JobGo. | 24/08/2026 | 24/08/2026 | ECS operations checklist |
+| Thứ 3 | Chuẩn hóa secrets bằng Systems Manager Parameter Store hoặc Secrets Manager. | 25/08/2026 | 25/08/2026 | Secrets management notes |
+| Thứ 4 | Thiết lập CloudWatch Logs, metric filter và alarm cho các lỗi backend quan trọng. | 26/08/2026 | 26/08/2026 | CloudWatch alarms guide |
+| Thứ 5 | Kiểm tra snapshot policy của RDS và versioning cho S3 bucket chứa CV. | 27/08/2026 | 27/08/2026 | RDS backup, S3 versioning docs |
+| Thứ 6 | Hoàn thiện checklist triển khai: build frontend, push image ECR, update ECS service và clear CloudFront cache. | 28/08/2026 | 28/08/2026 | Deployment runbook |
+| Thứ 7 | Chạy smoke test production-like và xác nhận guest, student, company, admin đều hoạt động đúng. | 29/08/2026 | 29/08/2026 | Production smoke test checklist |
 
 ### Kết quả đạt được
 
-Frontend có thể truy cập từ trình duyệt thông qua AWS hosting. Ứng dụng kết nối được backend production và sẵn sàng cho luồng demo end-to-end.
+- Kiến trúc triển khai trên AWS đã sẵn sàng cho trình diễn cuối kỳ với mức độ vận hành thực tế cao hơn.
+- Các thành phần hạ tầng đã có quy trình giám sát và kiểm soát thay đổi rõ ràng hơn.
