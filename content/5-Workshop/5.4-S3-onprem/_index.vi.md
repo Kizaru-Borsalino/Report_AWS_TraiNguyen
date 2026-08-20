@@ -1,9 +1,9 @@
 ---
-title: "Triển khai backend, database và lưu trữ CV"
+title: "Tri?n khai backend, c? s? d? li?u v? AI matching"
 date: 2026-08-08
 weight: 4
 chapter: false
 pre: " <b> 5.4. </b> "
 ---
 
-Phần này tập trung vào backend FastAPI, Amazon RDS PostgreSQL và S3 private bucket dùng cho CV.
+Ph?n n?y t?p trung v?o l?p x? l? nghi?p v? c?a JobGo: backend FastAPI, PostgreSQL, private S3 cho CV v? c?ch AI Matching s? d?ng d? li?u h? s? ?ng vi?n c?ng master data vi?c l?m ?? t?nh ?i?m ph? h?p.

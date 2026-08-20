@@ -1,9 +1,9 @@
 ---
-title: "Triển khai frontend"
+title: "Tri?n khai frontend v?i S3 v? CloudFront"
 date: 2026-08-06
 weight: 3
 chapter: false
 pre: " <b> 5.3. </b> "
 ---
 
-Phần này tập trung vào việc build frontend JobGo, đưa static assets lên S3 và phân phối qua CloudFront.
+M?c ti?u c?a ph?n n?y l? ??a giao di?n React c?a JobGo l?n AWS d??i d?ng static website, sau ?? ph?n ph?i qua CloudFront ?? ng??i d?ng guest v?n xem ???c danh s?ch vi?c l?m c?ng khai v?i t?c ?? t?i t?t h?n v? c? HTTPS.

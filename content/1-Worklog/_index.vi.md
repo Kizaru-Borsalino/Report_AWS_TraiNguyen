@@ -8,10 +8,25 @@ pre: " <b> 1. </b> "
 
 # Worklog
 
-Phần này ghi lại toàn bộ tiến độ thực hiện dự án **JobGo** từ ngày **15/06/2026** đến **05/09/2026**, theo nhịp làm việc từ **thứ 2 đến thứ 7** hàng tuần. Nội dung worklog tập trung vào ba mạch chính:
+Ph?n n?y ghi l?i ti?n ?? x?y d?ng **JobGo** trong giai ?o?n **15/06/2026 - 05/09/2026** theo l?ch l?m vi?c t? **th? 2 ??n th? 7**. N?i dung b?m theo ti?n tr?nh th?c t? c?a d? ?n: kh?i ??ng, ph?n t?ch nghi?p v?, ph?t tri?n t?nh n?ng, ho?n thi?n AI Matching, chu?n b? tri?n khai AWS v? vi?t b?o c?o cu?i k?.
 
-- Phân tích yêu cầu và thiết kế kiến trúc triển khai trên AWS.
-- Phát triển các nghiệp vụ chính của JobGo cho ứng viên, doanh nghiệp và quản trị viên.
-- Hoàn thiện AI Matching Engine, quy trình vận hành và tài liệu bàn giao.
+## Danh s?ch tu?n
 
-Mỗi tuần đều bám theo tiến độ thực tế của dự án và phản ánh rõ cách hệ thống được chuẩn bị để chạy trên môi trường AWS thay vì chỉ phục vụ thử nghiệm cục bộ.
+1. [Tu?n 1 - Kh?i ??ng d? ?n v? ph?n t?ch nhu c?u](./1.1-Week1/)
+2. [Tu?n 2 - X?y d?ng ??c t? ch?c n?ng v? ph?m vi MVP](./1.2-Week2/)
+3. [Tu?n 3 - Thi?t k? ki?n tr?c backend v? c? s? d? li?u](./1.3-Week3/)
+4. [Tu?n 4 - X?y d?ng x?c th?c, ph?n quy?n v? API n?n t?ng](./1.4-Week4/)
+5. [Tu?n 5 - Ho?n thi?n h? s? ?ng vi?n, doanh nghi?p v? master data](./1.5-Week5/)
+6. [Tu?n 6 - X?y d?ng nghi?p v? vi?c l?m, ?ng tuy?n v? duy?t tuy?n d?ng](./1.6-Week6/)
+7. [Tu?n 7 - T?i c?u tr?c giao di?n theo t?ng vai tr? v? m?n h?nh ri?ng](./1.7-Week7/)
+8. [Tu?n 8 - Ho?n thi?n quy tr?nh CV, l?ch s? ?ng tuy?n v? danh s?ch ?ng vi?n](./1.8-Week8/)
+9. [Tu?n 9 - Chu?n h?a master data v? ??ng b? ti?ng Vi?t c? d?u](./1.9-Week9/)
+10. [Tu?n 10 - X?y d?ng AI Matching Engine cho ?ng vi?n v? doanh nghi?p](./1.10-Week10/)
+11. [Tu?n 11 - K? ho?ch tri?n khai JobGo l?n AWS v? ki?m th? ph?t h?nh](./1.11-Week11/)
+12. [Tu?n 12 - Ho?n thi?n b?o c?o song ng? v? b?n giao d? ?n](./1.12-Week12/)
+
+## Ghi ch?
+
+- C?c tu?n ??u t?p trung v?o **kh?o s?t nhu c?u, use case, SRS, thi?t k? d? li?u v? ki?n tr?c**.
+- C?c tu?n gi?a t?p trung v?o **x?y d?ng nghi?p v? c?t l?i** cho ?ng vi?n, doanh nghi?p v? qu?n tr? vi?n.
+- Hai tu?n cu?i l? **k? ho?ch tri?n khai v? b?n giao**, t??ng ?ng v?i giai ?o?n `24/08/2026 - 05/09/2026`.

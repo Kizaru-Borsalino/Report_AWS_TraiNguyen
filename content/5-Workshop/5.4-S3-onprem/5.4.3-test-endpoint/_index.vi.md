@@ -1,9 +1,29 @@
 ---
-title: "Kết nối S3 private bucket cho CV"
-date: 2026-08-09
+title: "Ki?m th? API, upload CV v? quan s?t h? th?ng"
+date: 2026-08-10
 weight: 3
 chapter: false
 pre: " <b> 5.4.3. </b> "
 ---
 
-Backend cần có quyền upload CV vào S3 private bucket, tạo presigned URL khi người dùng có quyền tải file và từ chối truy cập nếu role không phù hợp.
+## Ki?m th? backend
+
+```bash
+curl https://api.jobgo.example.com/health
+curl https://api.jobgo.example.com/api/jobs
+```
+
+## Ki?m th? nghi?p v? ch?nh
+
+1. ?ng vi?n ??ng k? t?i kho?n v? t?o h? s?.
+2. ?ng vi?n t?i CV l?n bucket private th?ng qua backend.
+3. Doanh nghi?p t?o tin tuy?n d?ng v?i k? n?ng, v? tr?, c?p b?c v? ??a ?i?m.
+4. Trang vi?c l?m hi?n th? ph?n tr?m **AI Matching** khi ?ng vi?n ?? c? h? s?.
+5. Khi ?ng vi?n b?m ?ng tuy?n, h? th?ng t?o `application`, l?u th? gi?i thi?u v? ??ng b? sang l?ch s? ?ng tuy?n.
+6. Doanh nghi?p m? danh s?ch ?ng vi?n ?? xem ?i?m matching, th? gi?i thi?u, CV v? c?p nh?t tr?ng th?i.
+
+## Quan s?t
+
+- Xem log backend trong [CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html).
+- Theo d?i l?i 4xx/5xx t?i ALB v? ECS service.
+- Ki?m tra log upload CV, t?o job, t?o application v? c?p nh?t tr?ng th?i ?ng tuy?n.
