@@ -8,28 +8,29 @@ pre: " <b> 1. </b> "
 
 # Worklog
 
-Pháº§n nÃ y ghi láº¡i tiáº¿n Ä‘á»™ xÃ¢y dá»±ng **JobGo** trong giai Ä‘oáº¡n **15/06/2026 - 05/09/2026** theo lá»‹ch lÃ m viá»‡c tá»« **thá»© 2 Ä‘áº¿n thá»© 7**. Ná»™i dung bÃ¡m theo tiáº¿n trÃ¬nh thá»±c táº¿ cá»§a dá»± Ã¡n: khá»Ÿi Ä‘á»™ng, phÃ¢n tÃ­ch nghiá»‡p vá»¥, phÃ¡t triá»ƒn tÃ­nh nÄƒng, hoÃ n thiá»‡n AI Matching, chuáº©n bá»‹ triá»ƒn khai AWS vÃ  viáº¿t bÃ¡o cÃ¡o cuá»‘i ká»³.
+Phần này ghi lại tiến độ xây dựng **JobGo** trong giai đoạn **15/06/2026 - 05/09/2026** theo lịch làm việc từ **thứ 2 đến thứ 7**. Nội dung bám theo tiến trình thực tế của dự án: khởi động, phân tích nghiệp vụ, phát triển tính năng, hoàn thiện AI Matching, chuẩn bị triển khai AWS và viết báo cáo cuối kỳ.
 
-## Danh sÃ¡ch tuáº§n
+## Danh sách tuần
 
-1. [Tuáº§n 1 - Khá»Ÿi Ä‘á»™ng dá»± Ã¡n vÃ  phÃ¢n tÃ­ch nhu cáº§u](./1.1-Week1/)
-2. [Tuáº§n 2 - XÃ¢y dá»±ng Ä‘áº·c táº£ chá»©c nÄƒng vÃ  pháº¡m vi MVP](./1.2-Week2/)
-3. [Tuáº§n 3 - Thiáº¿t káº¿ kiáº¿n trÃºc backend vÃ  cÆ¡ sá»Ÿ dá»¯ liá»‡u](./1.3-Week3/)
-4. [Tuáº§n 4 - XÃ¢y dá»±ng xÃ¡c thá»±c, phÃ¢n quyá»n vÃ  API ná»n táº£ng](./1.4-Week4/)
-5. [Tuáº§n 5 - HoÃ n thiá»‡n há»“ sÆ¡ á»©ng viÃªn, doanh nghiá»‡p vÃ  master data](./1.5-Week5/)
-6. [Tuáº§n 6 - XÃ¢y dá»±ng nghiá»‡p vá»¥ viá»‡c lÃ m, á»©ng tuyá»ƒn vÃ  duyá»‡t tuyá»ƒn dá»¥ng](./1.6-Week6/)
-7. [Tuáº§n 7 - TÃ¡i cáº¥u trÃºc giao diá»‡n theo tá»«ng vai trÃ² vÃ  mÃ n hÃ¬nh riÃªng](./1.7-Week7/)
-8. [Tuáº§n 8 - HoÃ n thiá»‡n quy trÃ¬nh CV, lá»‹ch sá»­ á»©ng tuyá»ƒn vÃ  danh sÃ¡ch á»©ng viÃªn](./1.8-Week8/)
-9. [Tuáº§n 9 - Chuáº©n hÃ³a master data vÃ  Ä‘á»“ng bá»™ tiáº¿ng Viá»‡t cÃ³ dáº¥u](./1.9-Week9/)
-10. [Tuáº§n 10 - XÃ¢y dá»±ng AI Matching Engine cho á»©ng viÃªn vÃ  doanh nghiá»‡p](./1.10-Week10/)
-11. [Tuáº§n 11 - Káº¿ hoáº¡ch triá»ƒn khai JobGo lÃªn AWS vÃ  kiá»ƒm thá»­ phÃ¡t hÃ nh](./1.11-Week11/)
-12. [Tuáº§n 12 - HoÃ n thiá»‡n bÃ¡o cÃ¡o song ngá»¯ vÃ  bÃ n giao dá»± Ã¡n](./1.12-Week12/)
+1. [Tuần 1 - Khởi động dự án và phân tích nhu cầu](./1.1-Week1/)
+2. [Tuần 2 - Xây dựng đặc tả chức năng và phạm vi MVP](./1.2-Week2/)
+3. [Tuần 3 - Thiết kế kiến trúc backend và cơ sở dữ liệu](./1.3-Week3/)
+4. [Tuần 4 - Xây dựng xác thực, phân quyền và API nền tảng](./1.4-Week4/)
+5. [Tuần 5 - Hoàn thiện hồ sơ ứng viên, doanh nghiệp và master data](./1.5-Week5/)
+6. [Tuần 6 - Xây dựng nghiệp vụ việc làm, ứng tuyển và duyệt tuyển dụng](./1.6-Week6/)
+7. [Tuần 7 - Tái cấu trúc giao diện theo từng vai trò và màn hình riêng](./1.7-Week7/)
+8. [Tuần 8 - Hoàn thiện quy trình CV, lịch sử ứng tuyển và danh sách ứng viên](./1.8-Week8/)
+9. [Tuần 9 - Chuẩn hóa master data và đồng bộ tiếng Việt có dấu](./1.9-Week9/)
+10. [Tuần 10 - Xây dựng AI Matching Engine cho ứng viên và doanh nghiệp](./1.10-Week10/)
+11. [Tuần 11 - Kế hoạch triển khai JobGo lên AWS và kiểm thử phát hành](./1.11-Week11/)
+12. [Tuần 12 - Hoàn thiện báo cáo song ngữ và bàn giao dự án](./1.12-Week12/)
 
-## Ghi chÃº
+## Ghi chú
 
-- CÃ¡c tuáº§n Ä‘áº§u táº­p trung vÃ o **kháº£o sÃ¡t nhu cáº§u, use case, SRS, thiáº¿t káº¿ dá»¯ liá»‡u vÃ  kiáº¿n trÃºc**.
-- CÃ¡c tuáº§n giá»¯a táº­p trung vÃ o **xÃ¢y dá»±ng nghiá»‡p vá»¥ cá»‘t lÃµi** cho á»©ng viÃªn, doanh nghiá»‡p vÃ  quáº£n trá»‹ viÃªn.
-- Hai tuáº§n cuá»‘i lÃ  **káº¿ hoáº¡ch triá»ƒn khai vÃ  bÃ n giao**, tÆ°Æ¡ng á»©ng vá»›i giai Ä‘oáº¡n `24/08/2026 - 05/09/2026`.
+- Các tuần đầu tập trung vào **khảo sát nhu cầu, use case, SRS, thiết kế dữ liệu và kiến trúc**.
+- Các tuần giữa tập trung vào **xây dựng nghiệp vụ cốt lõi** cho ứng viên, doanh nghiệp và quản trị viên.
+- Hai tuần cuối là **kế hoạch triển khai và bàn giao**, tương ứng với giai đoạn `24/08/2026 - 05/09/2026`.
+
 
 
 

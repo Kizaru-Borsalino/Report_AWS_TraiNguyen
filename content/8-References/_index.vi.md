@@ -29,3 +29,6 @@ Phần này tổng hợp các tài liệu được sử dụng trong quá trình
 | Tài liệu kỹ thuật | GitHub Pages Documentation | https://docs.github.com/en/pages | Tham khảo cách publish website báo cáo, quản lý branch triển khai và kiểm tra kết quả build. |
 | Nghiệp vụ / báo cáo | FCAJ Project Rules | https://hcm-rules.awsfcaj.com/3-project/ | Bám theo yêu cầu chính thức về cấu trúc báo cáo, worklog, workshop, blog và nội dung cần có. |
 | Nghiệp vụ / báo cáo | Workshop Sample | https://workshop-sample.awsfcaj.com/5-workshop/ | Dùng để tham khảo cấu trúc workshop chuẩn, sau đó điều chỉnh lại nội dung cho phù hợp với JobGo. |
+| Source code | Project_AWS_Trai_JobGo | https://github.com/Kizaru-Borsalino/Project_AWS_Trai_JobGo | Mã nguồn project thực tiễn được sử dụng trong báo cáo.|
+| Video demo | VideoDemo_Jobgo | https://drive.google.com/drive/folders/1XVq1LOzE-sm1OYaa7ji7e_abpZ6v5QGi?usp=sharing
+drive.google.com | Video demo quá trình vận hành và các chức năng chính của project.|

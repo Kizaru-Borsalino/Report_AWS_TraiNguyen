@@ -1,31 +1,32 @@
 ﻿---
-title: "Tuáº§n 9 - Chuáº©n bá»‹ dá»¯ liá»‡u cho AI Matching"
+title: "Tuần 9 - Chuẩn bị dữ liệu cho AI Matching"
 date: 2026-08-10
 weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
 
-### Má»¥c tiÃªu
+### Mục tiêu
 
-- Bá»• sung cÃ¡c trÆ°á»ng cÃ²n thiáº¿u trong há»“ sÆ¡ á»©ng viÃªn Ä‘á»ƒ phá»¥c vá»¥ matching.
-- TÃ¡i cáº¥u trÃºc master data, Ä‘áº·c biá»‡t lÃ  cáº¥p báº­c vÃ  loáº¡i hÃ¬nh cÃ´ng viá»‡c.
-- Äáº£m báº£o frontend vÃ  backend dÃ¹ng chung cÃ¹ng má»™t mÃ´ hÃ¬nh dá»¯ liá»‡u chuáº©n hÃ³a.
+- Bổ sung các trường còn thiếu trong hồ sơ ứng viên để phục vụ matching.
+- Tái cấu trúc master data, đặc biệt là cấp bậc và loại hình công việc.
+- Đảm bảo frontend và backend dùng chung cùng một mô hình dữ liệu chuẩn hóa.
 
-### CÃ´ng viá»‡c Ä‘Ã£ thá»±c hiá»‡n
+### Công việc đã thực hiện
 
-| Thá»© | CÃ´ng viá»‡c | NgÃ y báº¯t Ä‘áº§u | NgÃ y hoÃ n thÃ nh | TÃ i liá»‡u |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu |
 | --- | --- | --- | --- | --- |
-| Thá»© 2 | Äá»•i master data Danh má»¥c thÃ nh Cáº¥p báº­c vá»›i cÃ¡c giÃ¡ trá»‹ nhÆ° Intern, Fresher, Junior, Middle, Senior. | 10/08/2026 | 10/08/2026 | [Database normalization](https://www.ibm.com/think/topics/database-normalization), [Master data management overview](https://www.ibm.com/think/topics/master-data-management) |
-| Thá»© 3 | Bá»• sung ká»¹ nÄƒng, vá»‹ trÃ­ á»©ng tuyá»ƒn, Ä‘á»‹a Ä‘iá»ƒm, hÃ¬nh thá»©c, loáº¡i hÃ¬nh vÃ  cáº¥p báº­c vÃ o há»“ sÆ¡ á»©ng viÃªn. | 11/08/2026 | 11/08/2026 | [Amazon Bedrock overview](https://aws.amazon.com/bedrock/), [Feature engineering](https://developers.google.com/machine-learning/data-prep/transform/feature-engineering) |
-| Thá»© 4 | Cáº­p nháº­t form cÃ´ng ty Ä‘á»ƒ dÃ¹ng láº¡i cÃ¹ng bá»™ master data vá»›i phÃ­a á»©ng viÃªn. | 12/08/2026 | 12/08/2026 | [OpenAPI Specification](https://swagger.io/specification/), [Pydantic Models](https://docs.pydantic.dev/latest/concepts/models/) |
-| Thá»© 5 | Viáº¿t rule kiá»ƒm tra dá»¯ liá»‡u Ä‘áº§u vÃ o Ä‘á»ƒ khÃ´ng cÃ²n giÃ¡ trá»‹ tá»± do gÃ¢y lá»‡ch khi cháº¥m Ä‘iá»ƒm. | 13/08/2026 | 13/08/2026 | [Pydantic Validation](https://docs.pydantic.dev/latest/concepts/validators/), [OWASP Input Validation Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html) |
-| Thá»© 6 | RÃ  soÃ¡t cáº¥u trÃºc API response cho jobs vÃ  profiles Ä‘á»ƒ sáºµn sÃ ng gáº¯n káº¿t quáº£ matching. | 14/08/2026 | 14/08/2026 | [REST API Design Best Practices](https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design), [JSON:API Recommendations](https://jsonapi.org/recommendations/) |
-| Thá»© 7 | Kiá»ƒm thá»­ cáº­p nháº­t há»“ sÆ¡ á»©ng viÃªn lÃ m thay Ä‘á»•i dá»¯ liá»‡u Ä‘áº§u vÃ o cho matching ngay trÃªn AWS. | 15/08/2026 | 15/08/2026 | [Amazon Bedrock overview](https://aws.amazon.com/bedrock/), [AWS Well-Architected Reliability Pillar](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html) |
+| Thứ 2 | Đổi master data Danh mục thành Cấp bậc với các giá trị như Intern, Fresher, Junior, Middle, Senior. | 10/08/2026 | 10/08/2026 | [Database normalization](https://www.ibm.com/think/topics/database-normalization), [Master data management overview](https://www.ibm.com/think/topics/master-data-management) |
+| Thứ 3 | Bổ sung kỹ năng, vị trí ứng tuyển, địa điểm, hình thức, loại hình và cấp bậc vào hồ sơ ứng viên. | 11/08/2026 | 11/08/2026 | [Amazon Bedrock overview](https://aws.amazon.com/bedrock/), [Feature engineering](https://developers.google.com/machine-learning/data-prep/transform/feature-engineering) |
+| Thứ 4 | Cập nhật form công ty để dùng lại cùng bộ master data với phía ứng viên. | 12/08/2026 | 12/08/2026 | [OpenAPI Specification](https://swagger.io/specification/), [Pydantic Models](https://docs.pydantic.dev/latest/concepts/models/) |
+| Thứ 5 | Viết rule kiểm tra dữ liệu đầu vào để không còn giá trị tự do gây lệch khi chấm điểm. | 13/08/2026 | 13/08/2026 | [Pydantic Validation](https://docs.pydantic.dev/latest/concepts/validators/), [OWASP Input Validation Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html) |
+| Thứ 6 | Rà soát cấu trúc API response cho jobs và profiles để sẵn sàng gắn kết quả matching. | 14/08/2026 | 14/08/2026 | [REST API Design Best Practices](https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design), [JSON:API Recommendations](https://jsonapi.org/recommendations/) |
+| Thứ 7 | Kiểm thử cập nhật hồ sơ ứng viên làm thay đổi dữ liệu đầu vào cho matching ngay trên AWS. | 15/08/2026 | 15/08/2026 | [Amazon Bedrock overview](https://aws.amazon.com/bedrock/), [AWS Well-Architected Reliability Pillar](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html) |
 
-### Káº¿t quáº£ Ä‘áº¡t Ä‘Æ°á»£c
+### Kết quả đạt được
 
-- Dá»¯ liá»‡u Ä‘áº§u vÃ o cho AI Matching Ä‘Ã£ Ä‘Æ°á»£c chuáº©n hÃ³a vÃ  Ä‘á»§ chiá»u Ä‘á»ƒ tÃ­nh Ä‘á»™ phÃ¹ há»£p.
-- Ná»n táº£ng master data cá»§a JobGo rÃµ rÃ ng hÆ¡n cho cáº£ tráº£i nghiá»‡m ngÆ°á»i dÃ¹ng vÃ  xá»­ lÃ½ há»‡ thá»‘ng.
+- Dữ liệu đầu vào cho AI Matching đã được chuẩn hóa và đủ chiều để tính độ phù hợp.
+- Nền tảng master data của JobGo rõ ràng hơn cho cả trải nghiệm người dùng và xử lý hệ thống.
+
 
 

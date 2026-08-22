@@ -1,31 +1,32 @@
 ﻿---
-title: "Tuáº§n 10 - XÃ¢y dá»±ng AI Matching Engine"
+title: "Tuần 10 - Xây dựng AI Matching Engine"
 date: 2026-08-17
 weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
 
-### Má»¥c tiÃªu
+### Mục tiêu
 
-- Triá»ƒn khai engine cháº¥m Ä‘iá»ƒm má»©c Ä‘á»™ phÃ¹ há»£p giá»¯a há»“ sÆ¡ á»©ng viÃªn vÃ  tin tuyá»ƒn dá»¥ng.
-- Hiá»ƒn thá»‹ AI Matching cho á»©ng viÃªn á»Ÿ trang viá»‡c lÃ m vÃ  cho doanh nghiá»‡p á»Ÿ danh sÃ¡ch á»©ng viÃªn.
-- Sáº¯p xáº¿p á»©ng viÃªn theo Ä‘á»™ phÃ¹ há»£p Ä‘á»ƒ há»— trá»£ tuyá»ƒn dá»¥ng nhanh hÆ¡n.
+- Triển khai engine chấm điểm mức độ phù hợp giữa hồ sơ ứng viên và tin tuyển dụng.
+- Hiển thị AI Matching cho ứng viên ở trang việc làm và cho doanh nghiệp ở danh sách ứng viên.
+- Sắp xếp ứng viên theo độ phù hợp để hỗ trợ tuyển dụng nhanh hơn.
 
-### CÃ´ng viá»‡c Ä‘Ã£ thá»±c hiá»‡n
+### Công việc đã thực hiện
 
-| Thá»© | CÃ´ng viá»‡c | NgÃ y báº¯t Ä‘áº§u | NgÃ y hoÃ n thÃ nh | TÃ i liá»‡u |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu |
 | --- | --- | --- | --- | --- |
-| Thá»© 2 | Thiáº¿t káº¿ cÃ´ng thá»©c cháº¥m Ä‘iá»ƒm cÃ³ trá»ng sá»‘ cho ká»¹ nÄƒng, vá»‹ trÃ­, cáº¥p báº­c, Ä‘á»‹a Ä‘iá»ƒm, loáº¡i hÃ¬nh vÃ  hÃ¬nh thá»©c lÃ m viá»‡c. | 17/08/2026 | 17/08/2026 | [Feature engineering](https://developers.google.com/machine-learning/data-prep/transform/feature-engineering), [Cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity) |
-| Thá»© 3 | XÃ¢y service backend tráº£ vá» overall score, label, matched skills vÃ  missing skills. | 18/08/2026 | 18/08/2026 | [OpenAPI Specification](https://swagger.io/specification/), [FastAPI Response Model](https://fastapi.tiangolo.com/tutorial/response-model/) |
-| Thá»© 4 | Gáº¯n káº¿t quáº£ matching vÃ o API danh sÃ¡ch viá»‡c lÃ m cho á»©ng viÃªn Ä‘Ã£ cÃ³ há»“ sÆ¡. | 19/08/2026 | 19/08/2026 | [FastAPI Response Model](https://fastapi.tiangolo.com/tutorial/response-model/), [React Query Overview](https://tanstack.com/query/latest/docs/framework/react/overview) |
-| Thá»© 5 | Hiá»ƒn thá»‹ badge AI Matching ná»•i báº­t trong card viá»‡c lÃ m vÃ  drawer chi tiáº¿t tin tuyá»ƒn dá»¥ng. | 20/08/2026 | 20/08/2026 | [Ant Design Progress](https://ant.design/components/progress), [Ant Design Badge](https://ant.design/components/badge) |
-| Thá»© 6 | Sáº¯p xáº¿p danh sÃ¡ch á»©ng viÃªn cá»§a doanh nghiá»‡p theo Ä‘iá»ƒm matching giáº£m dáº§n. | 21/08/2026 | 21/08/2026 | [Sorting HOW TO](https://docs.python.org/3/howto/sorting.html), [SQL ORDER BY](https://www.postgresql.org/docs/current/queries-order.html) |
-| Thá»© 7 | Kiá»ƒm tra viá»‡c cáº­p nháº­t há»“ sÆ¡ á»©ng viÃªn sáº½ refresh Ä‘iá»ƒm matching ngay mÃ  khÃ´ng cáº§n Ä‘Äƒng nháº­p láº¡i. | 22/08/2026 | 22/08/2026 | [React Query Invalidation from Mutations](https://tanstack.com/query/latest/docs/framework/react/guides/invalidations-from-mutations), [Playwright Docs](https://playwright.dev/docs/intro) |
+| Thứ 2 | Thiết kế công thức chấm điểm có trọng số cho kỹ năng, vị trí, cấp bậc, địa điểm, loại hình và hình thức làm việc. | 17/08/2026 | 17/08/2026 | [Feature engineering](https://developers.google.com/machine-learning/data-prep/transform/feature-engineering), [Cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity) |
+| Thứ 3 | Xây service backend trả về overall score, label, matched skills và missing skills. | 18/08/2026 | 18/08/2026 | [OpenAPI Specification](https://swagger.io/specification/), [FastAPI Response Model](https://fastapi.tiangolo.com/tutorial/response-model/) |
+| Thứ 4 | Gắn kết quả matching vào API danh sách việc làm cho ứng viên đã có hồ sơ. | 19/08/2026 | 19/08/2026 | [FastAPI Response Model](https://fastapi.tiangolo.com/tutorial/response-model/), [React Query Overview](https://tanstack.com/query/latest/docs/framework/react/overview) |
+| Thứ 5 | Hiển thị badge AI Matching nổi bật trong card việc làm và drawer chi tiết tin tuyển dụng. | 20/08/2026 | 20/08/2026 | [Ant Design Progress](https://ant.design/components/progress), [Ant Design Badge](https://ant.design/components/badge) |
+| Thứ 6 | Sắp xếp danh sách ứng viên của doanh nghiệp theo điểm matching giảm dần. | 21/08/2026 | 21/08/2026 | [Sorting HOW TO](https://docs.python.org/3/howto/sorting.html), [SQL ORDER BY](https://www.postgresql.org/docs/current/queries-order.html) |
+| Thứ 7 | Kiểm tra việc cập nhật hồ sơ ứng viên sẽ refresh điểm matching ngay mà không cần đăng nhập lại. | 22/08/2026 | 22/08/2026 | [React Query Invalidation from Mutations](https://tanstack.com/query/latest/docs/framework/react/guides/invalidations-from-mutations), [Playwright Docs](https://playwright.dev/docs/intro) |
 
-### Káº¿t quáº£ Ä‘áº¡t Ä‘Æ°á»£c
+### Kết quả đạt được
 
-- AI Matching Engine Ä‘Ã£ trá»Ÿ thÃ nh Ä‘iá»ƒm nháº¥n chá»©c nÄƒng chÃ­nh cá»§a JobGo.
-- Doanh nghiá»‡p cÃ³ thá»ƒ Æ°u tiÃªn á»©ng viÃªn phÃ¹ há»£p cao, cÃ²n á»©ng viÃªn nháº­n Ä‘Æ°á»£c pháº£n há»“i Ä‘á»‹nh lÆ°á»£ng trÆ°á»›c khi ná»™p Ä‘Æ¡n.
+- AI Matching Engine đã trở thành điểm nhấn chức năng chính của JobGo.
+- Doanh nghiệp có thể ưu tiên ứng viên phù hợp cao, còn ứng viên nhận được phản hồi định lượng trước khi nộp đơn.
+
 
 

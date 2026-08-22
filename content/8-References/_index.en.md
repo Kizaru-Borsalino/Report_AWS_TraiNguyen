@@ -29,3 +29,6 @@ This section summarizes the materials used during the analysis, implementation, 
 | Technical Documentation | GitHub Pages Documentation | https://docs.github.com/en/pages | Referenced for publishing the report website and understanding the deployment flow. |
 | Report / Requirements | FCAJ Project Rules | https://hcm-rules.awsfcaj.com/3-project/ | Used as the official guideline for report structure, worklogs, workshop content, blog requirements, and expected deliverables. |
 | Report / Requirements | Workshop Sample | https://workshop-sample.awsfcaj.com/5-workshop/ | Used as a structural reference for the workshop chapter before adapting it to the JobGo project context. |
+| Source code | Project_AWS_Trai_JobGo | https://github.com/Kizaru-Borsalino/Project_AWS_Trai_JobGo | Source code of the practical project used in this report.|
+| Video demo | VideoDemo_Jobgo | https://drive.google.com/drive/folders/1XVq1LOzE-sm1OYaa7ji7e_abpZ6v5QGi?usp=sharing
+drive.google.com | Demo video showing the main project workflow and features.|
