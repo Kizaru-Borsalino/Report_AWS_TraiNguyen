@@ -1,29 +1,31 @@
----
-title: "Tuần 4 - Hồ sơ doanh nghiệp và tin tuyển dụng"
+﻿---
+title: "Tuáº§n 4 - Há»“ sÆ¡ doanh nghiá»‡p vÃ  tin tuyá»ƒn dá»¥ng"
 date: 2026-07-06
 weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
 
-### Mục tiêu
+### Má»¥c tiÃªu
 
-- Xây dựng đầy đủ nghiệp vụ doanh nghiệp: hồ sơ công ty, tạo tin tuyển dụng và danh sách tin.
-- Chuẩn hóa các trường master data dùng chung cho công việc và hồ sơ.
-- Chuẩn bị container backend để sẵn sàng triển khai lên ECS.
+- XÃ¢y dá»±ng Ä‘áº§y Ä‘á»§ nghiá»‡p vá»¥ doanh nghiá»‡p: há»“ sÆ¡ cÃ´ng ty, táº¡o tin tuyá»ƒn dá»¥ng vÃ  danh sÃ¡ch tin.
+- Chuáº©n hÃ³a cÃ¡c trÆ°á»ng master data dÃ¹ng chung cho cÃ´ng viá»‡c vÃ  há»“ sÆ¡.
+- Chuáº©n bá»‹ container backend Ä‘á»ƒ sáºµn sÃ ng triá»ƒn khai lÃªn ECS.
 
-### Công việc đã thực hiện
+### CÃ´ng viá»‡c Ä‘Ã£ thá»±c hiá»‡n
 
-| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu |
+| Thá»© | CÃ´ng viá»‡c | NgÃ y báº¯t Ä‘áº§u | NgÃ y hoÃ n thÃ nh | TÃ i liá»‡u |
 | --- | --- | --- | --- | --- |
-| Thứ 2 | Thiết kế company profile với tên công ty, website, quy mô, lĩnh vực, địa chỉ và phúc lợi. | 06/07/2026 | 06/07/2026 | Company profile specification |
-| Thứ 3 | Xây API tạo và cập nhật tin tuyển dụng với vị trí, kỹ năng, mức lương, hình thức làm việc và cấp bậc. | 07/07/2026 | 07/07/2026 | Job post API contract |
-| Thứ 4 | Hoàn thiện danh sách tin tuyển dụng của doanh nghiệp và trạng thái bản nháp, chờ duyệt, đã duyệt. | 08/07/2026 | 08/07/2026 | Job lifecycle design |
-| Thứ 5 | Tạo bảng master data cho kỹ năng, vị trí, địa điểm, loại hình, hình thức làm việc và cấp bậc. | 09/07/2026 | 09/07/2026 | Master data schema |
-| Thứ 6 | Đóng gói backend bằng Docker và cấu hình image cho Amazon ECR. | 10/07/2026 | 10/07/2026 | Dockerfile, Amazon ECR docs |
-| Thứ 7 | Kiểm thử nghiệp vụ tạo hồ sơ công ty và đăng tin theo role doanh nghiệp. | 11/07/2026 | 11/07/2026 | Company flow test plan |
+| Thá»© 2 | Thiáº¿t káº¿ company profile vá»›i tÃªn cÃ´ng ty, website, quy mÃ´, lÄ©nh vá»±c, Ä‘á»‹a chá»‰ vÃ  phÃºc lá»£i. | 06/07/2026 | 06/07/2026 | [Schema.org Organization](https://schema.org/Organization) |
+| Thá»© 3 | XÃ¢y API táº¡o vÃ  cáº­p nháº­t tin tuyá»ƒn dá»¥ng vá»›i vá»‹ trÃ­, ká»¹ nÄƒng, má»©c lÆ°Æ¡ng, hÃ¬nh thá»©c lÃ m viá»‡c vÃ  cáº¥p báº­c. | 07/07/2026 | 07/07/2026 | [REST API Design Best Practices](https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design), [Pydantic Models](https://docs.pydantic.dev/latest/concepts/models/) |
+| Thá»© 4 | HoÃ n thiá»‡n danh sÃ¡ch tin tuyá»ƒn dá»¥ng cá»§a doanh nghiá»‡p vÃ  tráº¡ng thÃ¡i báº£n nhÃ¡p, chá» duyá»‡t, Ä‘Ã£ duyá»‡t. | 08/07/2026 | 08/07/2026 | [State Machine Design Pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/state-machine) |
+| Thá»© 5 | Táº¡o báº£ng master data cho ká»¹ nÄƒng, vá»‹ trÃ­, Ä‘á»‹a Ä‘iá»ƒm, loáº¡i hÃ¬nh, hÃ¬nh thá»©c lÃ m viá»‡c vÃ  cáº¥p báº­c. | 09/07/2026 | 09/07/2026 | [PostgreSQL Documentation](https://www.postgresql.org/docs/current/index.html), [Database normalization](https://www.ibm.com/think/topics/database-normalization) |
+| Thá»© 6 | ÄÃ³ng gÃ³i backend báº±ng Docker vÃ  cáº¥u hÃ¬nh image cho Amazon ECR. | 10/07/2026 | 10/07/2026 | [Dockerfile reference](https://docs.docker.com/reference/dockerfile/), [Amazon ECR User Guide](https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html) |
+| Thá»© 7 | Kiá»ƒm thá»­ nghiá»‡p vá»¥ táº¡o há»“ sÆ¡ cÃ´ng ty vÃ  Ä‘Äƒng tin theo role doanh nghiá»‡p. | 11/07/2026 | 11/07/2026 | [Playwright Docs](https://playwright.dev/docs/intro), [Testing Library Guiding Principles](https://testing-library.com/docs/guiding-principles/) |
 
-### Kết quả đạt được
+### Káº¿t quáº£ Ä‘áº¡t Ä‘Æ°á»£c
 
-- Doanh nghiệp có thể quản lý thông tin và tạo tin tuyển dụng với dữ liệu chuẩn hóa.
-- Backend đã sẵn sàng cho bước triển khai container trên AWS.
+- Doanh nghiá»‡p cÃ³ thá»ƒ quáº£n lÃ½ thÃ´ng tin vÃ  táº¡o tin tuyá»ƒn dá»¥ng vá»›i dá»¯ liá»‡u chuáº©n hÃ³a.
+- Backend Ä‘Ã£ sáºµn sÃ ng cho bÆ°á»›c triá»ƒn khai container trÃªn AWS.
+
+

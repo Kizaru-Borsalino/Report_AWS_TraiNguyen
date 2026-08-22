@@ -27,3 +27,5 @@ pre: " <b> 1.1. </b> "
 
 - The first week now reflects a proper **project kickoff flow**: requirement discovery, actors, use cases, and business scope first, followed by the SRS direction.
 - The team entered the next phase with a clear foundation for SRS completion, data design, API planning, and AWS deployment preparation.
+
+

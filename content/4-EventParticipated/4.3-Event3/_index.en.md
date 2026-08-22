@@ -15,9 +15,9 @@ pre: " <b> 4.3. </b> "
 | Location | 26th Floor, Bitexco Financial Tower |
 | Role | Attendee |
 
-## Note
+## Event Image
 
-This event entry has been added to keep the internship activity timeline complete. The event image and full takeaways can be updated later after the event is completed or after the final notes are consolidated.
+![FCAJ Community Day August image](/images/event3.jpg)
 
 ## Topics of Interest
 

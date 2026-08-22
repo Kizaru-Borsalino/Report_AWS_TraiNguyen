@@ -27,3 +27,5 @@ pre: " <b> 1.12. </b> "
 
 - The final report will clearly present the full lifecycle of JobGo as an AWS-oriented recruitment platform.
 - This entry is written as the **planned report completion and handover** week for `31/08/2026 - 05/09/2026`.
+
+

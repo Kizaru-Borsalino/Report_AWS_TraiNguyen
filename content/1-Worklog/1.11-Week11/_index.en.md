@@ -27,3 +27,5 @@ pre: " <b> 1.11. </b> "
 
 - By the end of week 11, JobGo is presented as a deployment-ready AWS solution with frontend, backend, database, private file storage, and monitoring.
 - This entry is written as a **planned deployment worklog** for `24/08/2026 - 29/08/2026`, because those dates are still ahead of the current day.
+
+

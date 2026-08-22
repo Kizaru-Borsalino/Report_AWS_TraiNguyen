@@ -15,9 +15,9 @@ pre: " <b> 4.3. </b> "
 | Địa điểm | Tầng 26, Bitexco Financial Tower |
 | Vai trò | Người tham dự |
 
-## Ghi chú
+## Hình ảnh sự kiện
 
-Hiện tại em đã thêm mục sự kiện này vào cấu trúc báo cáo để giữ đúng timeline tham gia hoạt động. Phần hình ảnh và nội dung chia sẻ chi tiết có thể tiếp tục cập nhật sau khi sự kiện diễn ra hoặc khi đã tổng hợp đầy đủ tài liệu.
+![Hình ảnh Ngày hội cộng đồng FCAJ tháng Tám](/images/event3.jpg)
 
 ## Nội dung dự kiến quan tâm
 

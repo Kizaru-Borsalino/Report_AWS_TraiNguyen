@@ -1,29 +1,31 @@
----
-title: "Tuần 5 - Ứng tuyển, trạng thái hồ sơ và phê duyệt"
+﻿---
+title: "Tuáº§n 5 - á»¨ng tuyá»ƒn, tráº¡ng thÃ¡i há»“ sÆ¡ vÃ  phÃª duyá»‡t"
 date: 2026-07-13
 weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
 
-### Mục tiêu
+### Má»¥c tiÃªu
 
-- Kết nối trọn vẹn luồng ứng tuyển giữa ứng viên, doanh nghiệp và admin.
-- Quản lý trạng thái đơn ứng tuyển và thông báo thay đổi.
-- Đưa backend chạy thử trên Amazon ECS Fargate môi trường staging.
+- Káº¿t ná»‘i trá»n váº¹n luá»“ng á»©ng tuyá»ƒn giá»¯a á»©ng viÃªn, doanh nghiá»‡p vÃ  admin.
+- Quáº£n lÃ½ tráº¡ng thÃ¡i Ä‘Æ¡n á»©ng tuyá»ƒn vÃ  thÃ´ng bÃ¡o thay Ä‘á»•i.
+- ÄÆ°a backend cháº¡y thá»­ trÃªn Amazon ECS Fargate mÃ´i trÆ°á»ng staging.
 
-### Công việc đã thực hiện
+### CÃ´ng viá»‡c Ä‘Ã£ thá»±c hiá»‡n
 
-| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu |
+| Thá»© | CÃ´ng viá»‡c | NgÃ y báº¯t Ä‘áº§u | NgÃ y hoÃ n thÃ nh | TÃ i liá»‡u |
 | --- | --- | --- | --- | --- |
-| Thứ 2 | Xây API ứng tuyển với resume_id, thư giới thiệu và kiểm tra trùng đơn. | 13/07/2026 | 13/07/2026 | Application API contract |
-| Thứ 3 | Triển khai lịch sử trạng thái đơn và khả năng rút đơn, ứng tuyển lại khi phù hợp. | 14/07/2026 | 14/07/2026 | Application status model |
-| Thứ 4 | Tạo trang admin để duyệt tin tuyển dụng trước khi hiển thị công khai. | 15/07/2026 | 15/07/2026 | Admin moderation checklist |
-| Thứ 5 | Sinh thông báo khi đơn ứng tuyển được tạo, thay đổi trạng thái hoặc khi tin tuyển dụng được duyệt. | 16/07/2026 | 16/07/2026 | Notification flow design |
-| Thứ 6 | Tạo task definition, service và ALB target group cho backend staging trên ECS Fargate. | 17/07/2026 | 17/07/2026 | ECS Fargate deployment notes |
-| Thứ 7 | Chạy smoke test end-to-end trên môi trường staging bằng dữ liệu mẫu. | 18/07/2026 | 18/07/2026 | Staging smoke test checklist |
+| Thá»© 2 | XÃ¢y API á»©ng tuyá»ƒn vá»›i resume_id, thÆ° giá»›i thiá»‡u vÃ  kiá»ƒm tra trÃ¹ng Ä‘Æ¡n. | 13/07/2026 | 13/07/2026 | [OpenAPI Specification](https://swagger.io/specification/), [REST API Design Best Practices](https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design) |
+| Thá»© 3 | Triá»ƒn khai lá»‹ch sá»­ tráº¡ng thÃ¡i Ä‘Æ¡n vÃ  kháº£ nÄƒng rÃºt Ä‘Æ¡n, á»©ng tuyá»ƒn láº¡i khi phÃ¹ há»£p. | 14/07/2026 | 14/07/2026 | [State Machine Design Pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/state-machine) |
+| Thá»© 4 | Táº¡o trang admin Ä‘á»ƒ duyá»‡t tin tuyá»ƒn dá»¥ng trÆ°á»›c khi hiá»ƒn thá»‹ cÃ´ng khai. | 15/07/2026 | 15/07/2026 | [OWASP Authorization Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html) |
+| Thá»© 5 | Sinh thÃ´ng bÃ¡o khi Ä‘Æ¡n á»©ng tuyá»ƒn Ä‘Æ°á»£c táº¡o, thay Ä‘á»•i tráº¡ng thÃ¡i hoáº·c khi tin tuyá»ƒn dá»¥ng Ä‘Æ°á»£c duyá»‡t. | 16/07/2026 | 16/07/2026 | [Amazon EventBridge User Guide](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html), [Designing notifications](https://www.nngroup.com/articles/notification-design/) |
+| Thá»© 6 | Táº¡o task definition, service vÃ  ALB target group cho backend staging trÃªn ECS Fargate. | 17/07/2026 | 17/07/2026 | [Amazon ECS on AWS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html) |
+| Thá»© 7 | Cháº¡y smoke test end-to-end trÃªn mÃ´i trÆ°á»ng staging báº±ng dá»¯ liá»‡u máº«u. | 18/07/2026 | 18/07/2026 | [Playwright Docs](https://playwright.dev/docs/intro), [AWS Well-Architected Operational Excellence](https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/welcome.html) |
 
-### Kết quả đạt được
+### Káº¿t quáº£ Ä‘áº¡t Ä‘Æ°á»£c
 
-- Luồng ứng tuyển cơ bản đã hoàn chỉnh và có thể trình diễn trên môi trường staging AWS.
-- Admin đã kiểm soát được chất lượng bài đăng trước khi công khai ra trang việc làm.
+- Luá»“ng á»©ng tuyá»ƒn cÆ¡ báº£n Ä‘Ã£ hoÃ n chá»‰nh vÃ  cÃ³ thá»ƒ trÃ¬nh diá»…n trÃªn mÃ´i trÆ°á»ng staging AWS.
+- Admin Ä‘Ã£ kiá»ƒm soÃ¡t Ä‘Æ°á»£c cháº¥t lÆ°á»£ng bÃ i Ä‘Äƒng trÆ°á»›c khi cÃ´ng khai ra trang viá»‡c lÃ m.
+
+
