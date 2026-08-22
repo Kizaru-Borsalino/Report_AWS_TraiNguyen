@@ -6,7 +6,6 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-# Events Participated
 
 During the internship and project implementation, I participated in learning activities, workshops, and technical discussions related to AWS, backend development, and cloud application deployment.
 

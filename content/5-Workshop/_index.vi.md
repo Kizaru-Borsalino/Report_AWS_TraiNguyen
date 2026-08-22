@@ -6,7 +6,6 @@ chapter: false
 pre: " <b> 5. </b> "
 ---
 
-# Workshop
 
 Phần này trình bày **project kỹ thuật chính** của báo cáo: triển khai nền tảng tuyển dụng **JobGo** trên AWS theo hướng end-to-end. Khác với workshop mẫu của FCAJ, nội dung bên dưới bám sát use case của chính dự án: website tìm việc có khách truy cập công khai, ứng viên, doanh nghiệp, quản trị viên và điểm nhấn là **AI Matching Engine**.
 

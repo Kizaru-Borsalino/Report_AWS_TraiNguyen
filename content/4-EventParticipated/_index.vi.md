@@ -6,7 +6,6 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-# Sự kiện đã tham gia
 
 Trong quá trình thực tập và thực hiện dự án, em tham gia các hoạt động học tập, workshop và thảo luận kỹ thuật liên quan đến AWS, backend development và triển khai ứng dụng cloud.
 

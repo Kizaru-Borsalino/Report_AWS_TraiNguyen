@@ -6,7 +6,6 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-# Worklog
 
 Phần này ghi lại tiến độ xây dựng **JobGo** trong giai đoạn **15/06/2026 - 05/09/2026** theo lịch làm việc từ **thứ 2 đến thứ 7**. Nội dung bám theo tiến trình thực tế của dự án: khởi động, phân tích nghiệp vụ, phát triển tính năng, hoàn thiện AI Matching, chuẩn bị triển khai AWS và viết báo cáo cuối kỳ.
 

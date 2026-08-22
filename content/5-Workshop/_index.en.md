@@ -6,7 +6,6 @@ chapter: false
 pre: " <b> 5. </b> "
 ---
 
-# Workshop
 
 This section presents the **main technical project** of the report: deploying **JobGo** on AWS from end to end. Unlike the FCAJ sample workshop, the content below is tailored to the actual JobGo use case: a job portal with public visitors, candidates, companies, administrators, and an **AI Matching Engine** as the key differentiator.
 
